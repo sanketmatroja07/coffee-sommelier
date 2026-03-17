@@ -1,0 +1,8 @@
+{
+  "buildCommand": "cd consumer && npm run build",
+  "outputDirectory": "consumer/dist",
+  "installCommand": "cd consumer && npm install",
+  "rewrites": [
+    { "source": "/(.*)", "destination": "/index.html" }
+  ]
+}
