@@ -1,0 +1,9 @@
+{
+  "name": "coffee-sommelier",
+  "private": true,
+  "scripts": {
+    "dev": "./scripts/start-dev.sh",
+    "dev:frontend": "cd consumer && npm run dev",
+    "dev:backend": "cd backend && uvicorn app.main:app --reload"
+  }
+}

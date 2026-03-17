@@ -1,0 +1,57 @@
+services:
+  db:
+    image: postgres:16-alpine
+    environment:
+      POSTGRES_USER: sommelier
+      POSTGRES_PASSWORD: sommelier
+      POSTGRES_DB: sommelier
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U sommelier -d sommelier"]
+      interval: 5s
+      timeout: 5s
+      retries: 5
+
+  api:
+    build:
+      context: ./backend
+      dockerfile: Dockerfile
+    ports:
+      - "8000:8000"
+    environment:
+      DATABASE_URL: postgresql+asyncpg://sommelier:sommelier@db:5432/sommelier
+      ADMIN_USER: admin
+      ADMIN_PASSWORD: changeme
+      CORS_ORIGINS: "http://localhost:3000,http://localhost:5173,http://localhost:4173,http://localhost:5174,http://localhost:5175,http://localhost:5176,http://localhost:8080"
+    depends_on:
+      db:
+        condition: service_healthy
+    volumes:
+      - ./backend/app:/app/app
+      - ./data/seed:/app/data/seed:ro
+
+  widget:
+    build:
+      context: ./widget
+      dockerfile: Dockerfile
+    ports:
+      - "8080:80"
+    depends_on:
+      - api
+
+  consumer:
+    build:
+      context: ./consumer
+      dockerfile: Dockerfile
+      args:
+        - VITE_API_URL=http://localhost:8000
+    ports:
+      - "5174:80"
+    depends_on:
+      - api
+
+volumes:
+  postgres_data: {}

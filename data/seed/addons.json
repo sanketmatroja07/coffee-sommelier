@@ -1,0 +1,15 @@
+[
+  {"cafe_id": "550e8400-e29b-41d4-a716-446655440001", "name": "Oat milk", "addon_type": "milk", "price": 0.75},
+  {"cafe_id": "550e8400-e29b-41d4-a716-446655440001", "name": "Extra shot", "addon_type": "extra_shot", "price": 1.00},
+  {"cafe_id": "550e8400-e29b-41d4-a716-446655440001", "name": "Vanilla syrup", "addon_type": "syrup", "price": 0.50},
+  {"cafe_id": "550e8400-e29b-41d4-a716-446655440002", "name": "Oat milk", "addon_type": "milk", "price": 0.75},
+  {"cafe_id": "550e8400-e29b-41d4-a716-446655440002", "name": "Extra shot", "addon_type": "extra_shot", "price": 1.00},
+  {"cafe_id": "550e8400-e29b-41d4-a716-446655440003", "name": "Oat milk", "addon_type": "milk", "price": 0.75},
+  {"cafe_id": "550e8400-e29b-41d4-a716-446655440003", "name": "Almond milk", "addon_type": "milk", "price": 0.75},
+  {"cafe_id": "550e8400-e29b-41d4-a716-446655440004", "name": "Oat milk", "addon_type": "milk", "price": 0.75},
+  {"cafe_id": "550e8400-e29b-41d4-a716-446655440004", "name": "Extra shot", "addon_type": "extra_shot", "price": 1.00},
+  {"cafe_id": "550e8400-e29b-41d4-a716-446655440009", "name": "Oat milk", "addon_type": "milk", "price": 0.75},
+  {"cafe_id": "550e8400-e29b-41d4-a716-446655440009", "name": "Extra shot", "addon_type": "extra_shot", "price": 1.00},
+  {"cafe_id": "550e8400-e29b-41d4-a716-446655440015", "name": "Oat milk", "addon_type": "milk", "price": 0.75},
+  {"cafe_id": "550e8400-e29b-41d4-a716-446655440020", "name": "Oat milk", "addon_type": "milk", "price": 0.75}
+]

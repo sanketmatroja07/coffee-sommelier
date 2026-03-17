@@ -1,0 +1,29 @@
+.lazy-image {
+  position: relative;
+  overflow: hidden;
+}
+
+.lazy-image__placeholder {
+  position: absolute;
+  inset: 0;
+  background-size: cover;
+  filter: blur(8px);
+}
+
+.lazy-image__img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.lazy-image--loaded .lazy-image__img {
+  opacity: 1;
+}
+
+.lazy-image--placeholder {
+  /* no image, just placeholder */
+}

@@ -1,0 +1,28 @@
+node_modules
+.next
+.data
+*.log
+.DS_Store
+
+# Environment & secrets
+.env
+.env.*
+!.env.example
+
+# Build outputs
+dist
+consumer/dist
+admin/dist
+widget/dist
+*.egg-info
+
+# Python
+.venv
+venv
+__pycache__
+*.pyc
+*.pyo
+
+# IDE
+.idea
+.vscode

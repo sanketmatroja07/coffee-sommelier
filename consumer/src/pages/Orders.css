@@ -1,0 +1,130 @@
+.orders {
+  max-width: 640px;
+  margin: 0 auto;
+  padding: 1.5rem;
+}
+
+.orders__back {
+  display: inline-block;
+  margin-bottom: 1rem;
+  color: var(--color-muted);
+}
+
+.orders__back:hover {
+  color: var(--color-espresso);
+}
+
+.orders h1 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.orders__empty {
+  color: var(--color-muted);
+}
+
+.orders__list {
+  list-style: none;
+}
+
+.orders__item {
+  padding: 1rem;
+  background: var(--color-card);
+  border-radius: 12px;
+  margin-bottom: 0.75rem;
+  border: 1px solid var(--color-border);
+  transition: transform 0.2s;
+}
+
+.orders__item:hover {
+  transform: translateX(4px);
+}
+
+.orders__item-link {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+}
+
+.orders__item-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.25rem;
+}
+
+.orders__cafe {
+  font-weight: 600;
+}
+
+.orders__status {
+  font-size: 0.75rem;
+  padding: 0.2rem 0.5rem;
+  border-radius: 6px;
+  text-transform: capitalize;
+}
+
+.orders__status--pending {
+  background: #fef3c7;
+  color: #92400e;
+}
+
+.orders__status--preparing {
+  background: #dbeafe;
+  color: #1e40af;
+}
+
+.orders__status--ready {
+  background: #d1fae5;
+  color: #065f46;
+}
+
+.orders__status--picked_up {
+  background: #f3f4f6;
+  color: #4b5563;
+}
+
+.orders__item-meta {
+  font-size: 0.85rem;
+  color: var(--color-muted);
+}
+
+.orders--guest {
+  text-align: center;
+  padding: 3rem;
+}
+
+.orders__login-btn {
+  margin-top: 1rem;
+  padding: 0.75rem 1.5rem;
+  background: var(--color-accent);
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.orders__error {
+  color: var(--color-text-muted);
+  text-align: center;
+  padding: var(--space-6);
+}
+
+.orders__error p {
+  margin-bottom: var(--space-4);
+}
+
+.orders__retry {
+  padding: var(--space-3) var(--space-6);
+  background: var(--color-accent);
+  color: white;
+  border: none;
+  border-radius: var(--radius-md);
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.orders__retry:hover {
+  background: var(--color-accent-hover);
+}

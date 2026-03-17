@@ -1,0 +1,9 @@
+merchant_id,sku,name,roast_level,acidity,body,sweetness,flavor_tags,process,origin,price,caffeine_level,brew_methods_supported
+default,ETH-001,Ethiopian Yirgacheffe,1,5,2,4,"fruity;floral;citrus",Washed,Ethiopia,18,full,"pour_over;drip"
+default,COL-001,Colombia Supremo,3,3,3,3,"nutty;caramel;chocolate",Washed,Colombia,16,full,"pour_over;french_press;drip"
+default,BRA-001,Brazil Santos,3,1,4,4,"chocolate;nutty;caramel",Natural,Brazil,14,full,"french_press;drip;espresso"
+default,GUA-001,Guatemala Antigua,3,3,3,3,"chocolate;nutty;caramel;fruity",Washed,Guatemala,19,full,"pour_over;french_press;aeropress"
+default,ITA-001,Italian Espresso Blend,5,1,5,3,"chocolate;nutty;earthy",Washed,Blend,15,full,"espresso;drip;aeropress"
+default,SUM-001,Sumatra Mandheling,5,1,5,3,"earthy;chocolate;nutty",Wet-hulled,Indonesia,17,full,"french_press;drip;pour_over"
+default,KEN-001,Kenya AA,1,5,3,4,"fruity;berry;citrus;floral",Washed,Kenya,22,full,"pour_over;drip"
+default,MIX-001,House Blend (Low Acid),3,1,3,3,"nutty;chocolate;caramel",Washed,Blend,13,full,"drip;french_press;aeropress"

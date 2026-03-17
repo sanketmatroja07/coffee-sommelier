@@ -1,0 +1,4022 @@
+[
+  {
+    "cafe_id": "550e8400-e29b-41d4-a716-446655440001",
+    "coffee_id": "660e8400-e29b-41d4-a716-446655440001",
+    "price": 5.0,
+    "size_options": [
+      "12oz",
+      "16oz"
+    ],
+    "available": true
+  },
+  {
+    "cafe_id": "550e8400-e29b-41d4-a716-446655440001",
+    "coffee_id": "660e8400-e29b-41d4-a716-446655440002",
+    "price": 5.5,
+    "size_options": [
+      "12oz",
+      "16oz"
+    ],
+    "available": true
+  },
+  {
+    "cafe_id": "550e8400-e29b-41d4-a716-446655440001",
+    "coffee_id": "660e8400-e29b-41d4-a716-446655440003",
+    "price": 6.0,
+    "size_options": [
+      "12oz",
+      "16oz"
+    ],
+    "available": true
+  },
+  {
+    "cafe_id": "550e8400-e29b-41d4-a716-446655440001",
+    "coffee_id": "660e8400-e29b-41d4-a716-446655440005",
+    "price": 4.5,
+    "size_options": [
+      "single",
+      "double"
+    ],
+    "available": true
+  },
+  {
+    "cafe_id": "550e8400-e29b-41d4-a716-446655440001",
+    "coffee_id": "660e8400-e29b-41d4-a716-446655440008",
+    "price": 6.0,
+    "size_options": [
+      "12oz",
+      "16oz"
+    ],
+    "available": true
+  },
+  {
+    "cafe_id": "550e8400-e29b-41d4-a716-446655440001",
+    "coffee_id": "660e8400-e29b-41d4-a716-446655440014",
+    "price": 6.5,
+    "size_options": [
+      "12oz",
+      "16oz"
+    ],
+    "available": true
+  },
+  {
+    "cafe_id": "550e8400-e29b-41d4-a716-446655440001",
+    "coffee_id": "660e8400-e29b-41d4-a716-446655440015",
+    "price": 4.5,
+    "size_options": [
+      "12oz",
+      "16oz"
+    ],
+    "available": true
+  },
+  {
+    "cafe_id": "550e8400-e29b-41d4-a716-446655440001",
+    "coffee_id": "660e8400-e29b-41d4-a716-446655440006",
+    "price": 5.0,
+    "size_options": [
+      "12oz",
+      "16oz"
+    ],
+    "available": true
+  },
+  {
+    "cafe_id": "550e8400-e29b-41d4-a716-446655440001",
+    "coffee_id": "660e8400-e29b-41d4-a716-446655440007",
+    "price": 5.5,
+    "size_options": [
+      "12oz",
+      "16oz"
+    ],
+    "available": true
+  },
+  {
+    "cafe_id": "550e8400-e29b-41d4-a716-446655440002",
+    "coffee_id": "660e8400-e29b-41d4-a716-446655440001",
+    "price": 5.5,
+    "size_options": [
+      "12oz",
+      "16oz"
+    ],
+    "available": true
+  },
+  {
+    "cafe_id": "550e8400-e29b-41d4-a716-446655440002",
+    "coffee_id": "660e8400-e29b-41d4-a716-446655440002",
+    "price": 6.0,
+    "size_options": [
+      "12oz",
+      "16oz"
+    ],
+    "available": true
+  },
+  {
+    "cafe_id": "550e8400-e29b-41d4-a716-446655440002",
+    "coffee_id": "660e8400-e29b-41d4-a716-446655440003",
+    "price": 6.5,
+    "size_options": [
+      "12oz",
+      "16oz"
+    ],
+    "available": true
+  },
+  {
+    "cafe_id": "550e8400-e29b-41d4-a716-446655440002",
+    "coffee_id": "660e8400-e29b-41d4-a716-446655440005",
+    "price": 5.0,
+    "size_options": [
+      "single",
+      "double"
+    ],
+    "available": true
+  },
+  {
+    "cafe_id": "550e8400-e29b-41d4-a716-446655440002",
+    "coffee_id": "660e8400-e29b-41d4-a716-446655440008",
+    "price": 6.5,
+    "size_options": [
+      "12oz",
+      "16oz"
+    ],
+    "available": true
+  },
+  {
+    "cafe_id": "550e8400-e29b-41d4-a716-446655440002",
+    "coffee_id": "660e8400-e29b-41d4-a716-446655440012",
+    "price": 6.0,
+    "size_options": [
+      "12oz",
+      "16oz"
+    ],
+    "available": true
+  },
+  {
+    "cafe_id": "550e8400-e29b-41d4-a716-446655440002",
+    "coffee_id": "660e8400-e29b-41d4-a716-446655440014",
+    "price": 4.5,
+    "size_options": [
+      "12oz",
+      "16oz"
+    ],
+    "available": true
+  },
+  {
+    "cafe_id": "550e8400-e29b-41d4-a716-446655440003",
+    "coffee_id": "660e8400-e29b-41d4-a716-446655440001",
+    "price": 6.0,
+    "size_options": [
+      "12oz",
+      "16oz"
+    ],
+    "available": true
+  },
+  {
+    "cafe_id": "550e8400-e29b-41d4-a716-446655440003",
+    "coffee_id": "660e8400-e29b-41d4-a716-446655440002",
+    "price": 6.5,
+    "size_options": [
+      "12oz",
+      "16oz"
+    ],
+    "available": true
+  },
+  {
+    "cafe_id": "550e8400-e29b-41d4-a716-446655440003",
+    "coffee_id": "660e8400-e29b-41d4-a716-446655440003",
+    "price": 4.5,
+    "size_options": [
+      "12oz",
+      "16oz"
+    ],
+    "available": true
+  },
+  {
+    "cafe_id": "550e8400-e29b-41d4-a716-446655440003",
+    "coffee_id": "660e8400-e29b-41d4-a716-446655440005",
+    "price": 5.5,
+    "size_options": [
+      "single",
+      "double"
+    ],
+    "available": true
+  },
+  {
+    "cafe_id": "550e8400-e29b-41d4-a716-446655440003",
+    "coffee_id": "660e8400-e29b-41d4-a716-446655440008",
+    "price": 4.5,
+    "size_options": [
+      "12oz",
+      "16oz"
+    ],
+    "available": true
+  },
+  {
+    "cafe_id": "550e8400-e29b-41d4-a716-446655440003",
+    "coffee_id": "660e8400-e29b-41d4-a716-446655440013",
+    "price": 4.5,
+    "size_options": [
+      "12oz",
+      "16oz"
+    ],
+    "available": true
+  },
+  {
+    "cafe_id": "550e8400-e29b-41d4-a716-446655440004",
+    "coffee_id": "660e8400-e29b-41d4-a716-446655440001",
+    "price": 6.5,
+    "size_options": [
+      "12oz",
+      "16oz"
+    ],
+    "available": true
+  },
+  {
+    "cafe_id": "550e8400-e29b-41d4-a716-446655440004",
+    "coffee_id": "660e8400-e29b-41d4-a716-446655440002",
+    "price": 4.5,
+    "size_options": [
+      "12oz",
+      "16oz"
+    ],
+    "available": true
+  },
+  {
+    "cafe_id": "550e8400-e29b-41d4-a716-446655440004",
+    "coffee_id": "660e8400-e29b-41d4-a716-446655440003",
+    "price": 5.0,
+    "size_options": [
+      "12oz",
+      "16oz"
+    ],
+    "available": true
+  },
+  {
+    "cafe_id": "550e8400-e29b-41d4-a716-446655440004",
+    "coffee_id": "660e8400-e29b-41d4-a716-446655440005",
+    "price": 6.0,
+    "size_options": [
+      "single",
+      "double"
+    ],
+    "available": true
+  },
+  {
+    "cafe_id": "550e8400-e29b-41d4-a716-446655440004",
+    "coffee_id": "660e8400-e29b-41d4-a716-446655440008",
+    "price": 5.0,
+    "size_options": [
+      "12oz",
+      "16oz"
+    ],
+    "available": true
+  },
+  {
+    "cafe_id": "550e8400-e29b-41d4-a716-446655440004",
+    "coffee_id": "660e8400-e29b-41d4-a716-446655440006",
+    "price": 6.5,
+    "size_options": [
+      "12oz",
+      "16oz"
+    ],
+    "available": true
+  },
+  {
+    "cafe_id": "550e8400-e29b-41d4-a716-446655440004",
+    "coffee_id": "660e8400-e29b-41d4-a716-446655440011",
+    "price": 6.5,
+    "size_options": [
+      "12oz",
+      "16oz"
+    ],
+    "available": true
+  },
+  {
+    "cafe_id": "550e8400-e29b-41d4-a716-446655440005",
+    "coffee_id": "660e8400-e29b-41d4-a716-446655440001",
+    "price": 4.5,
+    "size_options": [
+      "12oz",
+      "16oz"
+    ],
+    "available": true
+  },
+  {
+    "cafe_id": "550e8400-e29b-41d4-a716-446655440005",
+    "coffee_id": "660e8400-e29b-41d4-a716-446655440002",
+    "price": 5.0,
+    "size_options": [
+      "12oz",
+      "16oz"
+    ],
+    "available": true
+  },
+  {
+    "cafe_id": "550e8400-e29b-41d4-a716-446655440005",
+    "coffee_id": "660e8400-e29b-41d4-a716-446655440003",
+    "price": 5.5,
+    "size_options": [
+      "12oz",
+      "16oz"
+    ],
+    "available": true
+  },
+  {
+    "cafe_id": "550e8400-e29b-41d4-a716-446655440005",
+    "coffee_id": "660e8400-e29b-41d4-a716-446655440005",
+    "price": 6.5,
+    "size_options": [
+      "single",
+      "double"
+    ],
+    "available": true
+  },
+  {
+    "cafe_id": "550e8400-e29b-41d4-a716-446655440005",
+    "coffee_id": "660e8400-e29b-41d4-a716-446655440008",
+    "price": 5.5,
+    "size_options": [
+      "12oz",
+      "16oz"
+    ],
+    "available": true
+  },
+  {
+    "cafe_id": "550e8400-e29b-41d4-a716-446655440005",
+    "coffee_id": "660e8400-e29b-41d4-a716-446655440007",
+    "price": 5.0,
+    "size_options": [
+      "12oz",
+      "16oz"
+    ],
+    "available": true
+  },
+  {
+    "cafe_id": "550e8400-e29b-41d4-a716-446655440005",
+    "coffee_id": "660e8400-e29b-41d4-a716-446655440011",
+    "price": 4.5,
+    "size_options": [
+      "12oz",
+      "16oz"
+    ],
+    "available": true
+  },
+  {
+    "cafe_id": "550e8400-e29b-41d4-a716-446655440006",
+    "coffee_id": "660e8400-e29b-41d4-a716-446655440001",
+    "price": 5.0,
+    "size_options": [
+      "12oz",
+      "16oz"
+    ],
+    "available": true
+  },
+  {
+    "cafe_id": "550e8400-e29b-41d4-a716-446655440006",
+    "coffee_id": "660e8400-e29b-41d4-a716-446655440002",
+    "price": 5.5,
+    "size_options": [
+      "12oz",
+      "16oz"
+    ],
+    "available": true
+  },
+  {
+    "cafe_id": "550e8400-e29b-41d4-a716-446655440006",
+    "coffee_id": "660e8400-e29b-41d4-a716-446655440003",
+    "price": 6.0,
+    "size_options": [
+      "12oz",
+      "16oz"
+    ],
+    "available": true
+  },
+  {
+    "cafe_id": "550e8400-e29b-41d4-a716-446655440006",
+    "coffee_id": "660e8400-e29b-41d4-a716-446655440005",
+    "price": 4.5,
+    "size_options": [
+      "single",
+      "double"
+    ],
+    "available": true
+  },
+  {
+    "cafe_id": "550e8400-e29b-41d4-a716-446655440006",
+    "coffee_id": "660e8400-e29b-41d4-a716-446655440008",
+    "price": 6.0,
+    "size_options": [
+      "12oz",
+      "16oz"
+    ],
+    "available": true
+  },
+  {
+    "cafe_id": "550e8400-e29b-41d4-a716-446655440006",
+    "coffee_id": "660e8400-e29b-41d4-a716-446655440015",
+    "price": 4.5,
+    "size_options": [
+      "12oz",
+      "16oz"
+    ],
+    "available": true
+  },
+  {
+    "cafe_id": "550e8400-e29b-41d4-a716-446655440006",
+    "coffee_id": "660e8400-e29b-41d4-a716-446655440007",
+    "price": 5.5,
+    "size_options": [
+      "12oz",
+      "16oz"
+    ],
+    "available": true
+  },
+  {
+    "cafe_id": "550e8400-e29b-41d4-a716-446655440006",
+    "coffee_id": "660e8400-e29b-41d4-a716-446655440014",
+    "price": 6.5,
+    "size_options": [
+      "12oz",
+      "16oz"
+    ],
+    "available": true
+  },
+  {
+    "cafe_id": "550e8400-e29b-41d4-a716-446655440006",
+    "coffee_id": "660e8400-e29b-41d4-a716-446655440013",
+    "price": 6.0,
+    "size_options": [
+      "12oz",
+      "16oz"
+    ],
+    "available": true
+  },
+  {
+    "cafe_id": "550e8400-e29b-41d4-a716-446655440006",
+    "coffee_id": "660e8400-e29b-41d4-a716-446655440006",
+    "price": 5.0,
+    "size_options": [
+      "12oz",
+      "16oz"
+    ],
+    "available": true
+  },
+  {
+    "cafe_id": "550e8400-e29b-41d4-a716-446655440007",
+    "coffee_id": "660e8400-e29b-41d4-a716-446655440001",
+    "price": 5.5,
+    "size_options": [
+      "12oz",
+      "16oz"
+    ],
+    "available": true
+  },
+  {
+    "cafe_id": "550e8400-e29b-41d4-a716-446655440007",
+    "coffee_id": "660e8400-e29b-41d4-a716-446655440002",
+    "price": 6.0,
+    "size_options": [
+      "12oz",
+      "16oz"
+    ],
+    "available": true
+  },
+  {
+    "cafe_id": "550e8400-e29b-41d4-a716-446655440007",
+    "coffee_id": "660e8400-e29b-41d4-a716-446655440003",
+    "price": 6.5,
+    "size_options": [
+      "12oz",
+      "16oz"
+    ],
+    "available": true
+  },
+  {
+    "cafe_id": "550e8400-e29b-41d4-a716-446655440007",
+    "coffee_id": "660e8400-e29b-41d4-a716-446655440005",
+    "price": 5.0,
+    "size_options": [
+      "single",
+      "double"
+    ],
+    "available": true
+  },
+  {
+    "cafe_id": "550e8400-e29b-41d4-a716-446655440007",
+    "coffee_id": "660e8400-e29b-41d4-a716-446655440008",
+    "price": 6.5,
+    "size_options": [
+      "12oz",
+      "16oz"
+    ],
+    "available": true
+  },
+  {
+    "cafe_id": "550e8400-e29b-41d4-a716-446655440007",
+    "coffee_id": "660e8400-e29b-41d4-a716-446655440011",
+    "price": 5.5,
+    "size_options": [
+      "12oz",
+      "16oz"
+    ],
+    "available": true
+  },
+  {
+    "cafe_id": "550e8400-e29b-41d4-a716-446655440007",
+    "coffee_id": "660e8400-e29b-41d4-a716-446655440014",
+    "price": 4.5,
+    "size_options": [
+      "12oz",
+      "16oz"
+    ],
+    "available": true
+  },
+  {
+    "cafe_id": "550e8400-e29b-41d4-a716-446655440007",
+    "coffee_id": "660e8400-e29b-41d4-a716-446655440007",
+    "price": 6.0,
+    "size_options": [
+      "12oz",
+      "16oz"
+    ],
+    "available": true
+  },
+  {
+    "cafe_id": "550e8400-e29b-41d4-a716-446655440007",
+    "coffee_id": "660e8400-e29b-41d4-a716-446655440009",
+    "price": 4.5,
+    "size_options": [
+      "12oz",
+      "16oz"
+    ],
+    "available": true
+  },
+  {
+    "cafe_id": "550e8400-e29b-41d4-a716-446655440007",
+    "coffee_id": "660e8400-e29b-41d4-a716-446655440015",
+    "price": 5.0,
+    "size_options": [
+      "12oz",
+      "16oz"
+    ],
+    "available": true
+  },
+  {
+    "cafe_id": "550e8400-e29b-41d4-a716-446655440008",
+    "coffee_id": "660e8400-e29b-41d4-a716-446655440001",
+    "price": 6.0,
+    "size_options": [
+      "12oz",
+      "16oz"
+    ],
+    "available": true
+  },
+  {
+    "cafe_id": "550e8400-e29b-41d4-a716-446655440008",
+    "coffee_id": "660e8400-e29b-41d4-a716-446655440002",
+    "price": 6.5,
+    "size_options": [
+      "12oz",
+      "16oz"
+    ],
+    "available": true
+  },
+  {
+    "cafe_id": "550e8400-e29b-41d4-a716-446655440008",
+    "coffee_id": "660e8400-e29b-41d4-a716-446655440003",
+    "price": 4.5,
+    "size_options": [
+      "12oz",
+      "16oz"
+    ],
+    "available": true
+  },
+  {
+    "cafe_id": "550e8400-e29b-41d4-a716-446655440008",
+    "coffee_id": "660e8400-e29b-41d4-a716-446655440005",
+    "price": 5.5,
+    "size_options": [
+      "single",
+      "double"
+    ],
+    "available": true
+  },
+  {
+    "cafe_id": "550e8400-e29b-41d4-a716-446655440008",
+    "coffee_id": "660e8400-e29b-41d4-a716-446655440008",
+    "price": 4.5,
+    "size_options": [
+      "12oz",
+      "16oz"
+    ],
+    "available": true
+  },
+  {
+    "cafe_id": "550e8400-e29b-41d4-a716-446655440008",
+    "coffee_id": "660e8400-e29b-41d4-a716-446655440006",
+    "price": 6.0,
+    "size_options": [
+      "12oz",
+      "16oz"
+    ],
+    "available": true
+  },
+  {
+    "cafe_id": "550e8400-e29b-41d4-a716-446655440008",
+    "coffee_id": "660e8400-e29b-41d4-a716-446655440011",
+    "price": 6.0,
+    "size_options": [
+      "12oz",
+      "16oz"
+    ],
+    "available": true
+  },
+  {
+    "cafe_id": "550e8400-e29b-41d4-a716-446655440008",
+    "coffee_id": "660e8400-e29b-41d4-a716-446655440009",
+    "price": 5.0,
+    "size_options": [
+      "12oz",
+      "16oz"
+    ],
+    "available": true
+  },
+  {
+    "cafe_id": "550e8400-e29b-41d4-a716-446655440009",
+    "coffee_id": "660e8400-e29b-41d4-a716-446655440001",
+    "price": 6.5,
+    "size_options": [
+      "12oz",
+      "16oz"
+    ],
+    "available": true
+  },
+  {
+    "cafe_id": "550e8400-e29b-41d4-a716-446655440009",
+    "coffee_id": "660e8400-e29b-41d4-a716-446655440002",
+    "price": 4.5,
+    "size_options": [
+      "12oz",
+      "16oz"
+    ],
+    "available": true
+  },
+  {
+    "cafe_id": "550e8400-e29b-41d4-a716-446655440009",
+    "coffee_id": "660e8400-e29b-41d4-a716-446655440003",
+    "price": 5.0,
+    "size_options": [
+      "12oz",
+      "16oz"
+    ],
+    "available": true
+  },
+  {
+    "cafe_id": "550e8400-e29b-41d4-a716-446655440009",
+    "coffee_id": "660e8400-e29b-41d4-a716-446655440005",
+    "price": 6.0,
+    "size_options": [
+      "single",
+      "double"
+    ],
+    "available": true
+  },
+  {
+    "cafe_id": "550e8400-e29b-41d4-a716-446655440009",
+    "coffee_id": "660e8400-e29b-41d4-a716-446655440008",
+    "price": 5.0,
+    "size_options": [
+      "12oz",
+      "16oz"
+    ],
+    "available": true
+  },
+  {
+    "cafe_id": "550e8400-e29b-41d4-a716-446655440009",
+    "coffee_id": "660e8400-e29b-41d4-a716-446655440014",
+    "price": 5.5,
+    "size_options": [
+      "12oz",
+      "16oz"
+    ],
+    "available": true
+  },
+  {
+    "cafe_id": "550e8400-e29b-41d4-a716-446655440009",
+    "coffee_id": "660e8400-e29b-41d4-a716-446655440013",
+    "price": 5.0,
+    "size_options": [
+      "12oz",
+      "16oz"
+    ],
+    "available": true
+  },
+  {
+    "cafe_id": "550e8400-e29b-41d4-a716-446655440010",
+    "coffee_id": "660e8400-e29b-41d4-a716-446655440001",
+    "price": 4.5,
+    "size_options": [
+      "12oz",
+      "16oz"
+    ],
+    "available": true
+  },
+  {
+    "cafe_id": "550e8400-e29b-41d4-a716-446655440010",
+    "coffee_id": "660e8400-e29b-41d4-a716-446655440002",
+    "price": 5.0,
+    "size_options": [
+      "12oz",
+      "16oz"
+    ],
+    "available": true
+  },
+  {
+    "cafe_id": "550e8400-e29b-41d4-a716-446655440010",
+    "coffee_id": "660e8400-e29b-41d4-a716-446655440003",
+    "price": 5.5,
+    "size_options": [
+      "12oz",
+      "16oz"
+    ],
+    "available": true
+  },
+  {
+    "cafe_id": "550e8400-e29b-41d4-a716-446655440010",
+    "coffee_id": "660e8400-e29b-41d4-a716-446655440005",
+    "price": 6.5,
+    "size_options": [
+      "single",
+      "double"
+    ],
+    "available": true
+  },
+  {
+    "cafe_id": "550e8400-e29b-41d4-a716-446655440010",
+    "coffee_id": "660e8400-e29b-41d4-a716-446655440008",
+    "price": 5.5,
+    "size_options": [
+      "12oz",
+      "16oz"
+    ],
+    "available": true
+  },
+  {
+    "cafe_id": "550e8400-e29b-41d4-a716-446655440010",
+    "coffee_id": "660e8400-e29b-41d4-a716-446655440013",
+    "price": 5.5,
+    "size_options": [
+      "12oz",
+      "16oz"
+    ],
+    "available": true
+  },
+  {
+    "cafe_id": "550e8400-e29b-41d4-a716-446655440010",
+    "coffee_id": "660e8400-e29b-41d4-a716-446655440014",
+    "price": 6.0,
+    "size_options": [
+      "12oz",
+      "16oz"
+    ],
+    "available": true
+  },
+  {
+    "cafe_id": "550e8400-e29b-41d4-a716-446655440010",
+    "coffee_id": "660e8400-e29b-41d4-a716-446655440009",
+    "price": 6.0,
+    "size_options": [
+      "12oz",
+      "16oz"
+    ],
+    "available": true
+  },
+  {
+    "cafe_id": "550e8400-e29b-41d4-a716-446655440010",
+    "coffee_id": "660e8400-e29b-41d4-a716-446655440007",
+    "price": 5.0,
+    "size_options": [
+      "12oz",
+      "16oz"
+    ],
+    "available": true
+  },
+  {
+    "cafe_id": "550e8400-e29b-41d4-a716-446655440011",
+    "coffee_id": "660e8400-e29b-41d4-a716-446655440001",
+    "price": 5.0,
+    "size_options": [
+      "12oz",
+      "16oz"
+    ],
+    "available": true
+  },
+  {
+    "cafe_id": "550e8400-e29b-41d4-a716-446655440011",
+    "coffee_id": "660e8400-e29b-41d4-a716-446655440002",
+    "price": 5.5,
+    "size_options": [
+      "12oz",
+      "16oz"
+    ],
+    "available": true
+  },
+  {
+    "cafe_id": "550e8400-e29b-41d4-a716-446655440011",
+    "coffee_id": "660e8400-e29b-41d4-a716-446655440003",
+    "price": 6.0,
+    "size_options": [
+      "12oz",
+      "16oz"
+    ],
+    "available": true
+  },
+  {
+    "cafe_id": "550e8400-e29b-41d4-a716-446655440011",
+    "coffee_id": "660e8400-e29b-41d4-a716-446655440005",
+    "price": 4.5,
+    "size_options": [
+      "single",
+      "double"
+    ],
+    "available": true
+  },
+  {
+    "cafe_id": "550e8400-e29b-41d4-a716-446655440011",
+    "coffee_id": "660e8400-e29b-41d4-a716-446655440008",
+    "price": 6.0,
+    "size_options": [
+      "12oz",
+      "16oz"
+    ],
+    "available": true
+  },
+  {
+    "cafe_id": "550e8400-e29b-41d4-a716-446655440011",
+    "coffee_id": "660e8400-e29b-41d4-a716-446655440011",
+    "price": 5.0,
+    "size_options": [
+      "12oz",
+      "16oz"
+    ],
+    "available": true
+  },
+  {
+    "cafe_id": "550e8400-e29b-41d4-a716-446655440011",
+    "coffee_id": "660e8400-e29b-41d4-a716-446655440007",
+    "price": 5.5,
+    "size_options": [
+      "12oz",
+      "16oz"
+    ],
+    "available": true
+  },
+  {
+    "cafe_id": "550e8400-e29b-41d4-a716-446655440011",
+    "coffee_id": "660e8400-e29b-41d4-a716-446655440014",
+    "price": 6.5,
+    "size_options": [
+      "12oz",
+      "16oz"
+    ],
+    "available": true
+  },
+  {
+    "cafe_id": "550e8400-e29b-41d4-a716-446655440011",
+    "coffee_id": "660e8400-e29b-41d4-a716-446655440009",
+    "price": 6.5,
+    "size_options": [
+      "12oz",
+      "16oz"
+    ],
+    "available": true
+  },
+  {
+    "cafe_id": "550e8400-e29b-41d4-a716-446655440011",
+    "coffee_id": "660e8400-e29b-41d4-a716-446655440006",
+    "price": 5.0,
+    "size_options": [
+      "12oz",
+      "16oz"
+    ],
+    "available": true
+  },
+  {
+    "cafe_id": "550e8400-e29b-41d4-a716-446655440012",
+    "coffee_id": "660e8400-e29b-41d4-a716-446655440001",
+    "price": 5.5,
+    "size_options": [
+      "12oz",
+      "16oz"
+    ],
+    "available": true
+  },
+  {
+    "cafe_id": "550e8400-e29b-41d4-a716-446655440012",
+    "coffee_id": "660e8400-e29b-41d4-a716-446655440002",
+    "price": 6.0,
+    "size_options": [
+      "12oz",
+      "16oz"
+    ],
+    "available": true
+  },
+  {
+    "cafe_id": "550e8400-e29b-41d4-a716-446655440012",
+    "coffee_id": "660e8400-e29b-41d4-a716-446655440003",
+    "price": 6.5,
+    "size_options": [
+      "12oz",
+      "16oz"
+    ],
+    "available": true
+  },
+  {
+    "cafe_id": "550e8400-e29b-41d4-a716-446655440012",
+    "coffee_id": "660e8400-e29b-41d4-a716-446655440005",
+    "price": 5.0,
+    "size_options": [
+      "single",
+      "double"
+    ],
+    "available": true
+  },
+  {
+    "cafe_id": "550e8400-e29b-41d4-a716-446655440012",
+    "coffee_id": "660e8400-e29b-41d4-a716-446655440008",
+    "price": 6.5,
+    "size_options": [
+      "12oz",
+      "16oz"
+    ],
+    "available": true
+  },
+  {
+    "cafe_id": "550e8400-e29b-41d4-a716-446655440012",
+    "coffee_id": "660e8400-e29b-41d4-a716-446655440004",
+    "price": 4.5,
+    "size_options": [
+      "12oz",
+      "16oz"
+    ],
+    "available": true
+  },
+  {
+    "cafe_id": "550e8400-e29b-41d4-a716-446655440012",
+    "coffee_id": "660e8400-e29b-41d4-a716-446655440009",
+    "price": 4.5,
+    "size_options": [
+      "12oz",
+      "16oz"
+    ],
+    "available": true
+  },
+  {
+    "cafe_id": "550e8400-e29b-41d4-a716-446655440012",
+    "coffee_id": "660e8400-e29b-41d4-a716-446655440007",
+    "price": 6.0,
+    "size_options": [
+      "12oz",
+      "16oz"
+    ],
+    "available": true
+  },
+  {
+    "cafe_id": "550e8400-e29b-41d4-a716-446655440012",
+    "coffee_id": "660e8400-e29b-41d4-a716-446655440011",
+    "price": 5.5,
+    "size_options": [
+      "12oz",
+      "16oz"
+    ],
+    "available": true
+  },
+  {
+    "cafe_id": "550e8400-e29b-41d4-a716-446655440013",
+    "coffee_id": "660e8400-e29b-41d4-a716-446655440001",
+    "price": 6.0,
+    "size_options": [
+      "12oz",
+      "16oz"
+    ],
+    "available": true
+  },
+  {
+    "cafe_id": "550e8400-e29b-41d4-a716-446655440013",
+    "coffee_id": "660e8400-e29b-41d4-a716-446655440002",
+    "price": 6.5,
+    "size_options": [
+      "12oz",
+      "16oz"
+    ],
+    "available": true
+  },
+  {
+    "cafe_id": "550e8400-e29b-41d4-a716-446655440013",
+    "coffee_id": "660e8400-e29b-41d4-a716-446655440003",
+    "price": 4.5,
+    "size_options": [
+      "12oz",
+      "16oz"
+    ],
+    "available": true
+  },
+  {
+    "cafe_id": "550e8400-e29b-41d4-a716-446655440013",
+    "coffee_id": "660e8400-e29b-41d4-a716-446655440005",
+    "price": 5.5,
+    "size_options": [
+      "single",
+      "double"
+    ],
+    "available": true
+  },
+  {
+    "cafe_id": "550e8400-e29b-41d4-a716-446655440013",
+    "coffee_id": "660e8400-e29b-41d4-a716-446655440008",
+    "price": 4.5,
+    "size_options": [
+      "12oz",
+      "16oz"
+    ],
+    "available": true
+  },
+  {
+    "cafe_id": "550e8400-e29b-41d4-a716-446655440013",
+    "coffee_id": "660e8400-e29b-41d4-a716-446655440015",
+    "price": 5.5,
+    "size_options": [
+      "12oz",
+      "16oz"
+    ],
+    "available": true
+  },
+  {
+    "cafe_id": "550e8400-e29b-41d4-a716-446655440013",
+    "coffee_id": "660e8400-e29b-41d4-a716-446655440013",
+    "price": 4.5,
+    "size_options": [
+      "12oz",
+      "16oz"
+    ],
+    "available": true
+  },
+  {
+    "cafe_id": "550e8400-e29b-41d4-a716-446655440013",
+    "coffee_id": "660e8400-e29b-41d4-a716-446655440012",
+    "price": 6.5,
+    "size_options": [
+      "12oz",
+      "16oz"
+    ],
+    "available": true
+  },
+  {
+    "cafe_id": "550e8400-e29b-41d4-a716-446655440013",
+    "coffee_id": "660e8400-e29b-41d4-a716-446655440007",
+    "price": 6.5,
+    "size_options": [
+      "12oz",
+      "16oz"
+    ],
+    "available": true
+  },
+  {
+    "cafe_id": "550e8400-e29b-41d4-a716-446655440014",
+    "coffee_id": "660e8400-e29b-41d4-a716-446655440001",
+    "price": 6.5,
+    "size_options": [
+      "12oz",
+      "16oz"
+    ],
+    "available": true
+  },
+  {
+    "cafe_id": "550e8400-e29b-41d4-a716-446655440014",
+    "coffee_id": "660e8400-e29b-41d4-a716-446655440002",
+    "price": 4.5,
+    "size_options": [
+      "12oz",
+      "16oz"
+    ],
+    "available": true
+  },
+  {
+    "cafe_id": "550e8400-e29b-41d4-a716-446655440014",
+    "coffee_id": "660e8400-e29b-41d4-a716-446655440003",
+    "price": 5.0,
+    "size_options": [
+      "12oz",
+      "16oz"
+    ],
+    "available": true
+  },
+  {
+    "cafe_id": "550e8400-e29b-41d4-a716-446655440014",
+    "coffee_id": "660e8400-e29b-41d4-a716-446655440005",
+    "price": 6.0,
+    "size_options": [
+      "single",
+      "double"
+    ],
+    "available": true
+  },
+  {
+    "cafe_id": "550e8400-e29b-41d4-a716-446655440014",
+    "coffee_id": "660e8400-e29b-41d4-a716-446655440008",
+    "price": 5.0,
+    "size_options": [
+      "12oz",
+      "16oz"
+    ],
+    "available": true
+  },
+  {
+    "cafe_id": "550e8400-e29b-41d4-a716-446655440014",
+    "coffee_id": "660e8400-e29b-41d4-a716-446655440013",
+    "price": 5.0,
+    "size_options": [
+      "12oz",
+      "16oz"
+    ],
+    "available": true
+  },
+  {
+    "cafe_id": "550e8400-e29b-41d4-a716-446655440014",
+    "coffee_id": "660e8400-e29b-41d4-a716-446655440014",
+    "price": 5.5,
+    "size_options": [
+      "12oz",
+      "16oz"
+    ],
+    "available": true
+  },
+  {
+    "cafe_id": "550e8400-e29b-41d4-a716-446655440014",
+    "coffee_id": "660e8400-e29b-41d4-a716-446655440004",
+    "price": 5.5,
+    "size_options": [
+      "12oz",
+      "16oz"
+    ],
+    "available": true
+  },
+  {
+    "cafe_id": "550e8400-e29b-41d4-a716-446655440015",
+    "coffee_id": "660e8400-e29b-41d4-a716-446655440001",
+    "price": 4.5,
+    "size_options": [
+      "12oz",
+      "16oz"
+    ],
+    "available": true
+  },
+  {
+    "cafe_id": "550e8400-e29b-41d4-a716-446655440015",
+    "coffee_id": "660e8400-e29b-41d4-a716-446655440002",
+    "price": 5.0,
+    "size_options": [
+      "12oz",
+      "16oz"
+    ],
+    "available": true
+  },
+  {
+    "cafe_id": "550e8400-e29b-41d4-a716-446655440015",
+    "coffee_id": "660e8400-e29b-41d4-a716-446655440003",
+    "price": 5.5,
+    "size_options": [
+      "12oz",
+      "16oz"
+    ],
+    "available": true
+  },
+  {
+    "cafe_id": "550e8400-e29b-41d4-a716-446655440015",
+    "coffee_id": "660e8400-e29b-41d4-a716-446655440005",
+    "price": 6.5,
+    "size_options": [
+      "single",
+      "double"
+    ],
+    "available": true
+  },
+  {
+    "cafe_id": "550e8400-e29b-41d4-a716-446655440015",
+    "coffee_id": "660e8400-e29b-41d4-a716-446655440008",
+    "price": 5.5,
+    "size_options": [
+      "12oz",
+      "16oz"
+    ],
+    "available": true
+  },
+  {
+    "cafe_id": "550e8400-e29b-41d4-a716-446655440015",
+    "coffee_id": "660e8400-e29b-41d4-a716-446655440006",
+    "price": 4.5,
+    "size_options": [
+      "12oz",
+      "16oz"
+    ],
+    "available": true
+  },
+  {
+    "cafe_id": "550e8400-e29b-41d4-a716-446655440016",
+    "coffee_id": "660e8400-e29b-41d4-a716-446655440001",
+    "price": 5.0,
+    "size_options": [
+      "12oz",
+      "16oz"
+    ],
+    "available": true
+  },
+  {
+    "cafe_id": "550e8400-e29b-41d4-a716-446655440016",
+    "coffee_id": "660e8400-e29b-41d4-a716-446655440002",
+    "price": 5.5,
+    "size_options": [
+      "12oz",
+      "16oz"
+    ],
+    "available": true
+  },
+  {
+    "cafe_id": "550e8400-e29b-41d4-a716-446655440016",
+    "coffee_id": "660e8400-e29b-41d4-a716-446655440003",
+    "price": 6.0,
+    "size_options": [
+      "12oz",
+      "16oz"
+    ],
+    "available": true
+  },
+  {
+    "cafe_id": "550e8400-e29b-41d4-a716-446655440016",
+    "coffee_id": "660e8400-e29b-41d4-a716-446655440005",
+    "price": 4.5,
+    "size_options": [
+      "single",
+      "double"
+    ],
+    "available": true
+  },
+  {
+    "cafe_id": "550e8400-e29b-41d4-a716-446655440016",
+    "coffee_id": "660e8400-e29b-41d4-a716-446655440008",
+    "price": 6.0,
+    "size_options": [
+      "12oz",
+      "16oz"
+    ],
+    "available": true
+  },
+  {
+    "cafe_id": "550e8400-e29b-41d4-a716-446655440016",
+    "coffee_id": "660e8400-e29b-41d4-a716-446655440011",
+    "price": 5.0,
+    "size_options": [
+      "12oz",
+      "16oz"
+    ],
+    "available": true
+  },
+  {
+    "cafe_id": "550e8400-e29b-41d4-a716-446655440016",
+    "coffee_id": "660e8400-e29b-41d4-a716-446655440009",
+    "price": 6.5,
+    "size_options": [
+      "12oz",
+      "16oz"
+    ],
+    "available": true
+  },
+  {
+    "cafe_id": "550e8400-e29b-41d4-a716-446655440017",
+    "coffee_id": "660e8400-e29b-41d4-a716-446655440001",
+    "price": 5.5,
+    "size_options": [
+      "12oz",
+      "16oz"
+    ],
+    "available": true
+  },
+  {
+    "cafe_id": "550e8400-e29b-41d4-a716-446655440017",
+    "coffee_id": "660e8400-e29b-41d4-a716-446655440002",
+    "price": 6.0,
+    "size_options": [
+      "12oz",
+      "16oz"
+    ],
+    "available": true
+  },
+  {
+    "cafe_id": "550e8400-e29b-41d4-a716-446655440017",
+    "coffee_id": "660e8400-e29b-41d4-a716-446655440003",
+    "price": 6.5,
+    "size_options": [
+      "12oz",
+      "16oz"
+    ],
+    "available": true
+  },
+  {
+    "cafe_id": "550e8400-e29b-41d4-a716-446655440017",
+    "coffee_id": "660e8400-e29b-41d4-a716-446655440005",
+    "price": 5.0,
+    "size_options": [
+      "single",
+      "double"
+    ],
+    "available": true
+  },
+  {
+    "cafe_id": "550e8400-e29b-41d4-a716-446655440017",
+    "coffee_id": "660e8400-e29b-41d4-a716-446655440008",
+    "price": 6.5,
+    "size_options": [
+      "12oz",
+      "16oz"
+    ],
+    "available": true
+  },
+  {
+    "cafe_id": "550e8400-e29b-41d4-a716-446655440017",
+    "coffee_id": "660e8400-e29b-41d4-a716-446655440014",
+    "price": 4.5,
+    "size_options": [
+      "12oz",
+      "16oz"
+    ],
+    "available": true
+  },
+  {
+    "cafe_id": "550e8400-e29b-41d4-a716-446655440017",
+    "coffee_id": "660e8400-e29b-41d4-a716-446655440007",
+    "price": 6.0,
+    "size_options": [
+      "12oz",
+      "16oz"
+    ],
+    "available": true
+  },
+  {
+    "cafe_id": "550e8400-e29b-41d4-a716-446655440017",
+    "coffee_id": "660e8400-e29b-41d4-a716-446655440011",
+    "price": 5.5,
+    "size_options": [
+      "12oz",
+      "16oz"
+    ],
+    "available": true
+  },
+  {
+    "cafe_id": "550e8400-e29b-41d4-a716-446655440018",
+    "coffee_id": "660e8400-e29b-41d4-a716-446655440001",
+    "price": 6.0,
+    "size_options": [
+      "12oz",
+      "16oz"
+    ],
+    "available": true
+  },
+  {
+    "cafe_id": "550e8400-e29b-41d4-a716-446655440018",
+    "coffee_id": "660e8400-e29b-41d4-a716-446655440002",
+    "price": 6.5,
+    "size_options": [
+      "12oz",
+      "16oz"
+    ],
+    "available": true
+  },
+  {
+    "cafe_id": "550e8400-e29b-41d4-a716-446655440018",
+    "coffee_id": "660e8400-e29b-41d4-a716-446655440003",
+    "price": 4.5,
+    "size_options": [
+      "12oz",
+      "16oz"
+    ],
+    "available": true
+  },
+  {
+    "cafe_id": "550e8400-e29b-41d4-a716-446655440018",
+    "coffee_id": "660e8400-e29b-41d4-a716-446655440005",
+    "price": 5.5,
+    "size_options": [
+      "single",
+      "double"
+    ],
+    "available": true
+  },
+  {
+    "cafe_id": "550e8400-e29b-41d4-a716-446655440018",
+    "coffee_id": "660e8400-e29b-41d4-a716-446655440008",
+    "price": 4.5,
+    "size_options": [
+      "12oz",
+      "16oz"
+    ],
+    "available": true
+  },
+  {
+    "cafe_id": "550e8400-e29b-41d4-a716-446655440018",
+    "coffee_id": "660e8400-e29b-41d4-a716-446655440013",
+    "price": 4.5,
+    "size_options": [
+      "12oz",
+      "16oz"
+    ],
+    "available": true
+  },
+  {
+    "cafe_id": "550e8400-e29b-41d4-a716-446655440018",
+    "coffee_id": "660e8400-e29b-41d4-a716-446655440009",
+    "price": 5.0,
+    "size_options": [
+      "12oz",
+      "16oz"
+    ],
+    "available": true
+  },
+  {
+    "cafe_id": "550e8400-e29b-41d4-a716-446655440018",
+    "coffee_id": "660e8400-e29b-41d4-a716-446655440004",
+    "price": 5.0,
+    "size_options": [
+      "12oz",
+      "16oz"
+    ],
+    "available": true
+  },
+  {
+    "cafe_id": "550e8400-e29b-41d4-a716-446655440018",
+    "coffee_id": "660e8400-e29b-41d4-a716-446655440015",
+    "price": 5.5,
+    "size_options": [
+      "12oz",
+      "16oz"
+    ],
+    "available": true
+  },
+  {
+    "cafe_id": "550e8400-e29b-41d4-a716-446655440018",
+    "coffee_id": "660e8400-e29b-41d4-a716-446655440014",
+    "price": 5.0,
+    "size_options": [
+      "12oz",
+      "16oz"
+    ],
+    "available": true
+  },
+  {
+    "cafe_id": "550e8400-e29b-41d4-a716-446655440019",
+    "coffee_id": "660e8400-e29b-41d4-a716-446655440001",
+    "price": 6.5,
+    "size_options": [
+      "12oz",
+      "16oz"
+    ],
+    "available": true
+  },
+  {
+    "cafe_id": "550e8400-e29b-41d4-a716-446655440019",
+    "coffee_id": "660e8400-e29b-41d4-a716-446655440002",
+    "price": 4.5,
+    "size_options": [
+      "12oz",
+      "16oz"
+    ],
+    "available": true
+  },
+  {
+    "cafe_id": "550e8400-e29b-41d4-a716-446655440019",
+    "coffee_id": "660e8400-e29b-41d4-a716-446655440003",
+    "price": 5.0,
+    "size_options": [
+      "12oz",
+      "16oz"
+    ],
+    "available": true
+  },
+  {
+    "cafe_id": "550e8400-e29b-41d4-a716-446655440019",
+    "coffee_id": "660e8400-e29b-41d4-a716-446655440005",
+    "price": 6.0,
+    "size_options": [
+      "single",
+      "double"
+    ],
+    "available": true
+  },
+  {
+    "cafe_id": "550e8400-e29b-41d4-a716-446655440019",
+    "coffee_id": "660e8400-e29b-41d4-a716-446655440008",
+    "price": 5.0,
+    "size_options": [
+      "12oz",
+      "16oz"
+    ],
+    "available": true
+  },
+  {
+    "cafe_id": "550e8400-e29b-41d4-a716-446655440019",
+    "coffee_id": "660e8400-e29b-41d4-a716-446655440007",
+    "price": 4.5,
+    "size_options": [
+      "12oz",
+      "16oz"
+    ],
+    "available": true
+  },
+  {
+    "cafe_id": "550e8400-e29b-41d4-a716-446655440019",
+    "coffee_id": "660e8400-e29b-41d4-a716-446655440014",
+    "price": 5.5,
+    "size_options": [
+      "12oz",
+      "16oz"
+    ],
+    "available": true
+  },
+  {
+    "cafe_id": "550e8400-e29b-41d4-a716-446655440020",
+    "coffee_id": "660e8400-e29b-41d4-a716-446655440001",
+    "price": 4.5,
+    "size_options": [
+      "12oz",
+      "16oz"
+    ],
+    "available": true
+  },
+  {
+    "cafe_id": "550e8400-e29b-41d4-a716-446655440020",
+    "coffee_id": "660e8400-e29b-41d4-a716-446655440002",
+    "price": 5.0,
+    "size_options": [
+      "12oz",
+      "16oz"
+    ],
+    "available": true
+  },
+  {
+    "cafe_id": "550e8400-e29b-41d4-a716-446655440020",
+    "coffee_id": "660e8400-e29b-41d4-a716-446655440003",
+    "price": 5.5,
+    "size_options": [
+      "12oz",
+      "16oz"
+    ],
+    "available": true
+  },
+  {
+    "cafe_id": "550e8400-e29b-41d4-a716-446655440020",
+    "coffee_id": "660e8400-e29b-41d4-a716-446655440005",
+    "price": 6.5,
+    "size_options": [
+      "single",
+      "double"
+    ],
+    "available": true
+  },
+  {
+    "cafe_id": "550e8400-e29b-41d4-a716-446655440020",
+    "coffee_id": "660e8400-e29b-41d4-a716-446655440008",
+    "price": 5.5,
+    "size_options": [
+      "12oz",
+      "16oz"
+    ],
+    "available": true
+  },
+  {
+    "cafe_id": "550e8400-e29b-41d4-a716-446655440020",
+    "coffee_id": "660e8400-e29b-41d4-a716-446655440015",
+    "price": 6.5,
+    "size_options": [
+      "12oz",
+      "16oz"
+    ],
+    "available": true
+  },
+  {
+    "cafe_id": "550e8400-e29b-41d4-a716-446655440021",
+    "coffee_id": "660e8400-e29b-41d4-a716-446655440001",
+    "price": 5.0,
+    "size_options": [
+      "12oz",
+      "16oz"
+    ],
+    "available": true
+  },
+  {
+    "cafe_id": "550e8400-e29b-41d4-a716-446655440021",
+    "coffee_id": "660e8400-e29b-41d4-a716-446655440002",
+    "price": 5.5,
+    "size_options": [
+      "12oz",
+      "16oz"
+    ],
+    "available": true
+  },
+  {
+    "cafe_id": "550e8400-e29b-41d4-a716-446655440021",
+    "coffee_id": "660e8400-e29b-41d4-a716-446655440003",
+    "price": 6.0,
+    "size_options": [
+      "12oz",
+      "16oz"
+    ],
+    "available": true
+  },
+  {
+    "cafe_id": "550e8400-e29b-41d4-a716-446655440021",
+    "coffee_id": "660e8400-e29b-41d4-a716-446655440005",
+    "price": 4.5,
+    "size_options": [
+      "single",
+      "double"
+    ],
+    "available": true
+  },
+  {
+    "cafe_id": "550e8400-e29b-41d4-a716-446655440021",
+    "coffee_id": "660e8400-e29b-41d4-a716-446655440008",
+    "price": 6.0,
+    "size_options": [
+      "12oz",
+      "16oz"
+    ],
+    "available": true
+  },
+  {
+    "cafe_id": "550e8400-e29b-41d4-a716-446655440021",
+    "coffee_id": "660e8400-e29b-41d4-a716-446655440007",
+    "price": 5.5,
+    "size_options": [
+      "12oz",
+      "16oz"
+    ],
+    "available": true
+  },
+  {
+    "cafe_id": "550e8400-e29b-41d4-a716-446655440021",
+    "coffee_id": "660e8400-e29b-41d4-a716-446655440012",
+    "price": 5.5,
+    "size_options": [
+      "12oz",
+      "16oz"
+    ],
+    "available": true
+  },
+  {
+    "cafe_id": "550e8400-e29b-41d4-a716-446655440022",
+    "coffee_id": "660e8400-e29b-41d4-a716-446655440001",
+    "price": 5.5,
+    "size_options": [
+      "12oz",
+      "16oz"
+    ],
+    "available": true
+  },
+  {
+    "cafe_id": "550e8400-e29b-41d4-a716-446655440022",
+    "coffee_id": "660e8400-e29b-41d4-a716-446655440002",
+    "price": 6.0,
+    "size_options": [
+      "12oz",
+      "16oz"
+    ],
+    "available": true
+  },
+  {
+    "cafe_id": "550e8400-e29b-41d4-a716-446655440022",
+    "coffee_id": "660e8400-e29b-41d4-a716-446655440003",
+    "price": 6.5,
+    "size_options": [
+      "12oz",
+      "16oz"
+    ],
+    "available": true
+  },
+  {
+    "cafe_id": "550e8400-e29b-41d4-a716-446655440022",
+    "coffee_id": "660e8400-e29b-41d4-a716-446655440005",
+    "price": 5.0,
+    "size_options": [
+      "single",
+      "double"
+    ],
+    "available": true
+  },
+  {
+    "cafe_id": "550e8400-e29b-41d4-a716-446655440022",
+    "coffee_id": "660e8400-e29b-41d4-a716-446655440008",
+    "price": 6.5,
+    "size_options": [
+      "12oz",
+      "16oz"
+    ],
+    "available": true
+  },
+  {
+    "cafe_id": "550e8400-e29b-41d4-a716-446655440022",
+    "coffee_id": "660e8400-e29b-41d4-a716-446655440013",
+    "price": 6.5,
+    "size_options": [
+      "12oz",
+      "16oz"
+    ],
+    "available": true
+  },
+  {
+    "cafe_id": "550e8400-e29b-41d4-a716-446655440022",
+    "coffee_id": "660e8400-e29b-41d4-a716-446655440004",
+    "price": 4.5,
+    "size_options": [
+      "12oz",
+      "16oz"
+    ],
+    "available": true
+  },
+  {
+    "cafe_id": "550e8400-e29b-41d4-a716-446655440023",
+    "coffee_id": "660e8400-e29b-41d4-a716-446655440001",
+    "price": 6.0,
+    "size_options": [
+      "12oz",
+      "16oz"
+    ],
+    "available": true
+  },
+  {
+    "cafe_id": "550e8400-e29b-41d4-a716-446655440023",
+    "coffee_id": "660e8400-e29b-41d4-a716-446655440002",
+    "price": 6.5,
+    "size_options": [
+      "12oz",
+      "16oz"
+    ],
+    "available": true
+  },
+  {
+    "cafe_id": "550e8400-e29b-41d4-a716-446655440023",
+    "coffee_id": "660e8400-e29b-41d4-a716-446655440003",
+    "price": 4.5,
+    "size_options": [
+      "12oz",
+      "16oz"
+    ],
+    "available": true
+  },
+  {
+    "cafe_id": "550e8400-e29b-41d4-a716-446655440023",
+    "coffee_id": "660e8400-e29b-41d4-a716-446655440005",
+    "price": 5.5,
+    "size_options": [
+      "single",
+      "double"
+    ],
+    "available": true
+  },
+  {
+    "cafe_id": "550e8400-e29b-41d4-a716-446655440023",
+    "coffee_id": "660e8400-e29b-41d4-a716-446655440008",
+    "price": 4.5,
+    "size_options": [
+      "12oz",
+      "16oz"
+    ],
+    "available": true
+  },
+  {
+    "cafe_id": "550e8400-e29b-41d4-a716-446655440023",
+    "coffee_id": "660e8400-e29b-41d4-a716-446655440012",
+    "price": 6.5,
+    "size_options": [
+      "12oz",
+      "16oz"
+    ],
+    "available": true
+  },
+  {
+    "cafe_id": "550e8400-e29b-41d4-a716-446655440023",
+    "coffee_id": "660e8400-e29b-41d4-a716-446655440015",
+    "price": 5.5,
+    "size_options": [
+      "12oz",
+      "16oz"
+    ],
+    "available": true
+  },
+  {
+    "cafe_id": "550e8400-e29b-41d4-a716-446655440024",
+    "coffee_id": "660e8400-e29b-41d4-a716-446655440001",
+    "price": 6.5,
+    "size_options": [
+      "12oz",
+      "16oz"
+    ],
+    "available": true
+  },
+  {
+    "cafe_id": "550e8400-e29b-41d4-a716-446655440024",
+    "coffee_id": "660e8400-e29b-41d4-a716-446655440002",
+    "price": 4.5,
+    "size_options": [
+      "12oz",
+      "16oz"
+    ],
+    "available": true
+  },
+  {
+    "cafe_id": "550e8400-e29b-41d4-a716-446655440024",
+    "coffee_id": "660e8400-e29b-41d4-a716-446655440003",
+    "price": 5.0,
+    "size_options": [
+      "12oz",
+      "16oz"
+    ],
+    "available": true
+  },
+  {
+    "cafe_id": "550e8400-e29b-41d4-a716-446655440024",
+    "coffee_id": "660e8400-e29b-41d4-a716-446655440005",
+    "price": 6.0,
+    "size_options": [
+      "single",
+      "double"
+    ],
+    "available": true
+  },
+  {
+    "cafe_id": "550e8400-e29b-41d4-a716-446655440024",
+    "coffee_id": "660e8400-e29b-41d4-a716-446655440008",
+    "price": 5.0,
+    "size_options": [
+      "12oz",
+      "16oz"
+    ],
+    "available": true
+  },
+  {
+    "cafe_id": "550e8400-e29b-41d4-a716-446655440024",
+    "coffee_id": "660e8400-e29b-41d4-a716-446655440015",
+    "price": 6.0,
+    "size_options": [
+      "12oz",
+      "16oz"
+    ],
+    "available": true
+  },
+  {
+    "cafe_id": "550e8400-e29b-41d4-a716-446655440024",
+    "coffee_id": "660e8400-e29b-41d4-a716-446655440011",
+    "price": 6.5,
+    "size_options": [
+      "12oz",
+      "16oz"
+    ],
+    "available": true
+  },
+  {
+    "cafe_id": "550e8400-e29b-41d4-a716-446655440024",
+    "coffee_id": "660e8400-e29b-41d4-a716-446655440014",
+    "price": 5.5,
+    "size_options": [
+      "12oz",
+      "16oz"
+    ],
+    "available": true
+  },
+  {
+    "cafe_id": "550e8400-e29b-41d4-a716-446655440025",
+    "coffee_id": "660e8400-e29b-41d4-a716-446655440001",
+    "price": 4.5,
+    "size_options": [
+      "12oz",
+      "16oz"
+    ],
+    "available": true
+  },
+  {
+    "cafe_id": "550e8400-e29b-41d4-a716-446655440025",
+    "coffee_id": "660e8400-e29b-41d4-a716-446655440002",
+    "price": 5.0,
+    "size_options": [
+      "12oz",
+      "16oz"
+    ],
+    "available": true
+  },
+  {
+    "cafe_id": "550e8400-e29b-41d4-a716-446655440025",
+    "coffee_id": "660e8400-e29b-41d4-a716-446655440003",
+    "price": 5.5,
+    "size_options": [
+      "12oz",
+      "16oz"
+    ],
+    "available": true
+  },
+  {
+    "cafe_id": "550e8400-e29b-41d4-a716-446655440025",
+    "coffee_id": "660e8400-e29b-41d4-a716-446655440005",
+    "price": 6.5,
+    "size_options": [
+      "single",
+      "double"
+    ],
+    "available": true
+  },
+  {
+    "cafe_id": "550e8400-e29b-41d4-a716-446655440025",
+    "coffee_id": "660e8400-e29b-41d4-a716-446655440008",
+    "price": 5.5,
+    "size_options": [
+      "12oz",
+      "16oz"
+    ],
+    "available": true
+  },
+  {
+    "cafe_id": "550e8400-e29b-41d4-a716-446655440025",
+    "coffee_id": "660e8400-e29b-41d4-a716-446655440010",
+    "price": 6.5,
+    "size_options": [
+      "12oz",
+      "16oz"
+    ],
+    "available": true
+  },
+  {
+    "cafe_id": "550e8400-e29b-41d4-a716-446655440025",
+    "coffee_id": "660e8400-e29b-41d4-a716-446655440013",
+    "price": 5.5,
+    "size_options": [
+      "12oz",
+      "16oz"
+    ],
+    "available": true
+  },
+  {
+    "cafe_id": "550e8400-e29b-41d4-a716-446655440025",
+    "coffee_id": "660e8400-e29b-41d4-a716-446655440014",
+    "price": 6.0,
+    "size_options": [
+      "12oz",
+      "16oz"
+    ],
+    "available": true
+  },
+  {
+    "cafe_id": "550e8400-e29b-41d4-a716-446655440025",
+    "coffee_id": "660e8400-e29b-41d4-a716-446655440004",
+    "price": 6.0,
+    "size_options": [
+      "12oz",
+      "16oz"
+    ],
+    "available": true
+  },
+  {
+    "cafe_id": "550e8400-e29b-41d4-a716-446655440026",
+    "coffee_id": "660e8400-e29b-41d4-a716-446655440001",
+    "price": 5.0,
+    "size_options": [
+      "12oz",
+      "16oz"
+    ],
+    "available": true
+  },
+  {
+    "cafe_id": "550e8400-e29b-41d4-a716-446655440026",
+    "coffee_id": "660e8400-e29b-41d4-a716-446655440002",
+    "price": 5.5,
+    "size_options": [
+      "12oz",
+      "16oz"
+    ],
+    "available": true
+  },
+  {
+    "cafe_id": "550e8400-e29b-41d4-a716-446655440026",
+    "coffee_id": "660e8400-e29b-41d4-a716-446655440003",
+    "price": 6.0,
+    "size_options": [
+      "12oz",
+      "16oz"
+    ],
+    "available": true
+  },
+  {
+    "cafe_id": "550e8400-e29b-41d4-a716-446655440026",
+    "coffee_id": "660e8400-e29b-41d4-a716-446655440005",
+    "price": 4.5,
+    "size_options": [
+      "single",
+      "double"
+    ],
+    "available": true
+  },
+  {
+    "cafe_id": "550e8400-e29b-41d4-a716-446655440026",
+    "coffee_id": "660e8400-e29b-41d4-a716-446655440008",
+    "price": 6.0,
+    "size_options": [
+      "12oz",
+      "16oz"
+    ],
+    "available": true
+  },
+  {
+    "cafe_id": "550e8400-e29b-41d4-a716-446655440026",
+    "coffee_id": "660e8400-e29b-41d4-a716-446655440012",
+    "price": 5.5,
+    "size_options": [
+      "12oz",
+      "16oz"
+    ],
+    "available": true
+  },
+  {
+    "cafe_id": "550e8400-e29b-41d4-a716-446655440026",
+    "coffee_id": "660e8400-e29b-41d4-a716-446655440006",
+    "price": 5.0,
+    "size_options": [
+      "12oz",
+      "16oz"
+    ],
+    "available": true
+  },
+  {
+    "cafe_id": "550e8400-e29b-41d4-a716-446655440026",
+    "coffee_id": "660e8400-e29b-41d4-a716-446655440013",
+    "price": 6.0,
+    "size_options": [
+      "12oz",
+      "16oz"
+    ],
+    "available": true
+  },
+  {
+    "cafe_id": "550e8400-e29b-41d4-a716-446655440026",
+    "coffee_id": "660e8400-e29b-41d4-a716-446655440007",
+    "price": 5.5,
+    "size_options": [
+      "12oz",
+      "16oz"
+    ],
+    "available": true
+  },
+  {
+    "cafe_id": "550e8400-e29b-41d4-a716-446655440027",
+    "coffee_id": "660e8400-e29b-41d4-a716-446655440001",
+    "price": 5.5,
+    "size_options": [
+      "12oz",
+      "16oz"
+    ],
+    "available": true
+  },
+  {
+    "cafe_id": "550e8400-e29b-41d4-a716-446655440027",
+    "coffee_id": "660e8400-e29b-41d4-a716-446655440002",
+    "price": 6.0,
+    "size_options": [
+      "12oz",
+      "16oz"
+    ],
+    "available": true
+  },
+  {
+    "cafe_id": "550e8400-e29b-41d4-a716-446655440027",
+    "coffee_id": "660e8400-e29b-41d4-a716-446655440003",
+    "price": 6.5,
+    "size_options": [
+      "12oz",
+      "16oz"
+    ],
+    "available": true
+  },
+  {
+    "cafe_id": "550e8400-e29b-41d4-a716-446655440027",
+    "coffee_id": "660e8400-e29b-41d4-a716-446655440005",
+    "price": 5.0,
+    "size_options": [
+      "single",
+      "double"
+    ],
+    "available": true
+  },
+  {
+    "cafe_id": "550e8400-e29b-41d4-a716-446655440027",
+    "coffee_id": "660e8400-e29b-41d4-a716-446655440008",
+    "price": 6.5,
+    "size_options": [
+      "12oz",
+      "16oz"
+    ],
+    "available": true
+  },
+  {
+    "cafe_id": "550e8400-e29b-41d4-a716-446655440027",
+    "coffee_id": "660e8400-e29b-41d4-a716-446655440010",
+    "price": 5.0,
+    "size_options": [
+      "12oz",
+      "16oz"
+    ],
+    "available": true
+  },
+  {
+    "cafe_id": "550e8400-e29b-41d4-a716-446655440027",
+    "coffee_id": "660e8400-e29b-41d4-a716-446655440011",
+    "price": 5.5,
+    "size_options": [
+      "12oz",
+      "16oz"
+    ],
+    "available": true
+  },
+  {
+    "cafe_id": "550e8400-e29b-41d4-a716-446655440028",
+    "coffee_id": "660e8400-e29b-41d4-a716-446655440001",
+    "price": 6.0,
+    "size_options": [
+      "12oz",
+      "16oz"
+    ],
+    "available": true
+  },
+  {
+    "cafe_id": "550e8400-e29b-41d4-a716-446655440028",
+    "coffee_id": "660e8400-e29b-41d4-a716-446655440002",
+    "price": 6.5,
+    "size_options": [
+      "12oz",
+      "16oz"
+    ],
+    "available": true
+  },
+  {
+    "cafe_id": "550e8400-e29b-41d4-a716-446655440028",
+    "coffee_id": "660e8400-e29b-41d4-a716-446655440003",
+    "price": 4.5,
+    "size_options": [
+      "12oz",
+      "16oz"
+    ],
+    "available": true
+  },
+  {
+    "cafe_id": "550e8400-e29b-41d4-a716-446655440028",
+    "coffee_id": "660e8400-e29b-41d4-a716-446655440005",
+    "price": 5.5,
+    "size_options": [
+      "single",
+      "double"
+    ],
+    "available": true
+  },
+  {
+    "cafe_id": "550e8400-e29b-41d4-a716-446655440028",
+    "coffee_id": "660e8400-e29b-41d4-a716-446655440008",
+    "price": 4.5,
+    "size_options": [
+      "12oz",
+      "16oz"
+    ],
+    "available": true
+  },
+  {
+    "cafe_id": "550e8400-e29b-41d4-a716-446655440028",
+    "coffee_id": "660e8400-e29b-41d4-a716-446655440011",
+    "price": 6.0,
+    "size_options": [
+      "12oz",
+      "16oz"
+    ],
+    "available": true
+  },
+  {
+    "cafe_id": "550e8400-e29b-41d4-a716-446655440028",
+    "coffee_id": "660e8400-e29b-41d4-a716-446655440013",
+    "price": 4.5,
+    "size_options": [
+      "12oz",
+      "16oz"
+    ],
+    "available": true
+  },
+  {
+    "cafe_id": "550e8400-e29b-41d4-a716-446655440028",
+    "coffee_id": "660e8400-e29b-41d4-a716-446655440006",
+    "price": 6.0,
+    "size_options": [
+      "12oz",
+      "16oz"
+    ],
+    "available": true
+  },
+  {
+    "cafe_id": "550e8400-e29b-41d4-a716-446655440028",
+    "coffee_id": "660e8400-e29b-41d4-a716-446655440014",
+    "price": 5.0,
+    "size_options": [
+      "12oz",
+      "16oz"
+    ],
+    "available": true
+  },
+  {
+    "cafe_id": "550e8400-e29b-41d4-a716-446655440029",
+    "coffee_id": "660e8400-e29b-41d4-a716-446655440001",
+    "price": 6.5,
+    "size_options": [
+      "12oz",
+      "16oz"
+    ],
+    "available": true
+  },
+  {
+    "cafe_id": "550e8400-e29b-41d4-a716-446655440029",
+    "coffee_id": "660e8400-e29b-41d4-a716-446655440002",
+    "price": 4.5,
+    "size_options": [
+      "12oz",
+      "16oz"
+    ],
+    "available": true
+  },
+  {
+    "cafe_id": "550e8400-e29b-41d4-a716-446655440029",
+    "coffee_id": "660e8400-e29b-41d4-a716-446655440003",
+    "price": 5.0,
+    "size_options": [
+      "12oz",
+      "16oz"
+    ],
+    "available": true
+  },
+  {
+    "cafe_id": "550e8400-e29b-41d4-a716-446655440029",
+    "coffee_id": "660e8400-e29b-41d4-a716-446655440005",
+    "price": 6.0,
+    "size_options": [
+      "single",
+      "double"
+    ],
+    "available": true
+  },
+  {
+    "cafe_id": "550e8400-e29b-41d4-a716-446655440029",
+    "coffee_id": "660e8400-e29b-41d4-a716-446655440008",
+    "price": 5.0,
+    "size_options": [
+      "12oz",
+      "16oz"
+    ],
+    "available": true
+  },
+  {
+    "cafe_id": "550e8400-e29b-41d4-a716-446655440029",
+    "coffee_id": "660e8400-e29b-41d4-a716-446655440011",
+    "price": 6.5,
+    "size_options": [
+      "12oz",
+      "16oz"
+    ],
+    "available": true
+  },
+  {
+    "cafe_id": "550e8400-e29b-41d4-a716-446655440030",
+    "coffee_id": "660e8400-e29b-41d4-a716-446655440001",
+    "price": 4.5,
+    "size_options": [
+      "12oz",
+      "16oz"
+    ],
+    "available": true
+  },
+  {
+    "cafe_id": "550e8400-e29b-41d4-a716-446655440030",
+    "coffee_id": "660e8400-e29b-41d4-a716-446655440002",
+    "price": 5.0,
+    "size_options": [
+      "12oz",
+      "16oz"
+    ],
+    "available": true
+  },
+  {
+    "cafe_id": "550e8400-e29b-41d4-a716-446655440030",
+    "coffee_id": "660e8400-e29b-41d4-a716-446655440003",
+    "price": 5.5,
+    "size_options": [
+      "12oz",
+      "16oz"
+    ],
+    "available": true
+  },
+  {
+    "cafe_id": "550e8400-e29b-41d4-a716-446655440030",
+    "coffee_id": "660e8400-e29b-41d4-a716-446655440005",
+    "price": 6.5,
+    "size_options": [
+      "single",
+      "double"
+    ],
+    "available": true
+  },
+  {
+    "cafe_id": "550e8400-e29b-41d4-a716-446655440030",
+    "coffee_id": "660e8400-e29b-41d4-a716-446655440008",
+    "price": 5.5,
+    "size_options": [
+      "12oz",
+      "16oz"
+    ],
+    "available": true
+  },
+  {
+    "cafe_id": "550e8400-e29b-41d4-a716-446655440030",
+    "coffee_id": "660e8400-e29b-41d4-a716-446655440014",
+    "price": 6.0,
+    "size_options": [
+      "12oz",
+      "16oz"
+    ],
+    "available": true
+  },
+  {
+    "cafe_id": "550e8400-e29b-41d4-a716-446655440030",
+    "coffee_id": "660e8400-e29b-41d4-a716-446655440012",
+    "price": 5.0,
+    "size_options": [
+      "12oz",
+      "16oz"
+    ],
+    "available": true
+  },
+  {
+    "cafe_id": "550e8400-e29b-41d4-a716-446655440030",
+    "coffee_id": "660e8400-e29b-41d4-a716-446655440015",
+    "price": 6.5,
+    "size_options": [
+      "12oz",
+      "16oz"
+    ],
+    "available": true
+  },
+  {
+    "cafe_id": "550e8400-e29b-41d4-a716-446655440030",
+    "coffee_id": "660e8400-e29b-41d4-a716-446655440009",
+    "price": 6.0,
+    "size_options": [
+      "12oz",
+      "16oz"
+    ],
+    "available": true
+  },
+  {
+    "cafe_id": "550e8400-e29b-41d4-a716-446655440030",
+    "coffee_id": "660e8400-e29b-41d4-a716-446655440007",
+    "price": 5.0,
+    "size_options": [
+      "12oz",
+      "16oz"
+    ],
+    "available": true
+  },
+  {
+    "cafe_id": "550e8400-e29b-41d4-a716-446655440031",
+    "coffee_id": "660e8400-e29b-41d4-a716-446655440001",
+    "price": 5.0,
+    "size_options": [
+      "12oz",
+      "16oz"
+    ],
+    "available": true
+  },
+  {
+    "cafe_id": "550e8400-e29b-41d4-a716-446655440031",
+    "coffee_id": "660e8400-e29b-41d4-a716-446655440002",
+    "price": 5.5,
+    "size_options": [
+      "12oz",
+      "16oz"
+    ],
+    "available": true
+  },
+  {
+    "cafe_id": "550e8400-e29b-41d4-a716-446655440031",
+    "coffee_id": "660e8400-e29b-41d4-a716-446655440003",
+    "price": 6.0,
+    "size_options": [
+      "12oz",
+      "16oz"
+    ],
+    "available": true
+  },
+  {
+    "cafe_id": "550e8400-e29b-41d4-a716-446655440031",
+    "coffee_id": "660e8400-e29b-41d4-a716-446655440005",
+    "price": 4.5,
+    "size_options": [
+      "single",
+      "double"
+    ],
+    "available": true
+  },
+  {
+    "cafe_id": "550e8400-e29b-41d4-a716-446655440031",
+    "coffee_id": "660e8400-e29b-41d4-a716-446655440008",
+    "price": 6.0,
+    "size_options": [
+      "12oz",
+      "16oz"
+    ],
+    "available": true
+  },
+  {
+    "cafe_id": "550e8400-e29b-41d4-a716-446655440031",
+    "coffee_id": "660e8400-e29b-41d4-a716-446655440006",
+    "price": 5.0,
+    "size_options": [
+      "12oz",
+      "16oz"
+    ],
+    "available": true
+  },
+  {
+    "cafe_id": "550e8400-e29b-41d4-a716-446655440031",
+    "coffee_id": "660e8400-e29b-41d4-a716-446655440011",
+    "price": 5.0,
+    "size_options": [
+      "12oz",
+      "16oz"
+    ],
+    "available": true
+  },
+  {
+    "cafe_id": "550e8400-e29b-41d4-a716-446655440031",
+    "coffee_id": "660e8400-e29b-41d4-a716-446655440012",
+    "price": 5.5,
+    "size_options": [
+      "12oz",
+      "16oz"
+    ],
+    "available": true
+  },
+  {
+    "cafe_id": "550e8400-e29b-41d4-a716-446655440031",
+    "coffee_id": "660e8400-e29b-41d4-a716-446655440015",
+    "price": 4.5,
+    "size_options": [
+      "12oz",
+      "16oz"
+    ],
+    "available": true
+  },
+  {
+    "cafe_id": "550e8400-e29b-41d4-a716-446655440031",
+    "coffee_id": "660e8400-e29b-41d4-a716-446655440013",
+    "price": 6.0,
+    "size_options": [
+      "12oz",
+      "16oz"
+    ],
+    "available": true
+  },
+  {
+    "cafe_id": "550e8400-e29b-41d4-a716-446655440032",
+    "coffee_id": "660e8400-e29b-41d4-a716-446655440001",
+    "price": 5.5,
+    "size_options": [
+      "12oz",
+      "16oz"
+    ],
+    "available": true
+  },
+  {
+    "cafe_id": "550e8400-e29b-41d4-a716-446655440032",
+    "coffee_id": "660e8400-e29b-41d4-a716-446655440002",
+    "price": 6.0,
+    "size_options": [
+      "12oz",
+      "16oz"
+    ],
+    "available": true
+  },
+  {
+    "cafe_id": "550e8400-e29b-41d4-a716-446655440032",
+    "coffee_id": "660e8400-e29b-41d4-a716-446655440003",
+    "price": 6.5,
+    "size_options": [
+      "12oz",
+      "16oz"
+    ],
+    "available": true
+  },
+  {
+    "cafe_id": "550e8400-e29b-41d4-a716-446655440032",
+    "coffee_id": "660e8400-e29b-41d4-a716-446655440005",
+    "price": 5.0,
+    "size_options": [
+      "single",
+      "double"
+    ],
+    "available": true
+  },
+  {
+    "cafe_id": "550e8400-e29b-41d4-a716-446655440032",
+    "coffee_id": "660e8400-e29b-41d4-a716-446655440008",
+    "price": 6.5,
+    "size_options": [
+      "12oz",
+      "16oz"
+    ],
+    "available": true
+  },
+  {
+    "cafe_id": "550e8400-e29b-41d4-a716-446655440032",
+    "coffee_id": "660e8400-e29b-41d4-a716-446655440009",
+    "price": 4.5,
+    "size_options": [
+      "12oz",
+      "16oz"
+    ],
+    "available": true
+  },
+  {
+    "cafe_id": "550e8400-e29b-41d4-a716-446655440033",
+    "coffee_id": "660e8400-e29b-41d4-a716-446655440001",
+    "price": 6.0,
+    "size_options": [
+      "12oz",
+      "16oz"
+    ],
+    "available": true
+  },
+  {
+    "cafe_id": "550e8400-e29b-41d4-a716-446655440033",
+    "coffee_id": "660e8400-e29b-41d4-a716-446655440002",
+    "price": 6.5,
+    "size_options": [
+      "12oz",
+      "16oz"
+    ],
+    "available": true
+  },
+  {
+    "cafe_id": "550e8400-e29b-41d4-a716-446655440033",
+    "coffee_id": "660e8400-e29b-41d4-a716-446655440003",
+    "price": 4.5,
+    "size_options": [
+      "12oz",
+      "16oz"
+    ],
+    "available": true
+  },
+  {
+    "cafe_id": "550e8400-e29b-41d4-a716-446655440033",
+    "coffee_id": "660e8400-e29b-41d4-a716-446655440005",
+    "price": 5.5,
+    "size_options": [
+      "single",
+      "double"
+    ],
+    "available": true
+  },
+  {
+    "cafe_id": "550e8400-e29b-41d4-a716-446655440033",
+    "coffee_id": "660e8400-e29b-41d4-a716-446655440008",
+    "price": 4.5,
+    "size_options": [
+      "12oz",
+      "16oz"
+    ],
+    "available": true
+  },
+  {
+    "cafe_id": "550e8400-e29b-41d4-a716-446655440033",
+    "coffee_id": "660e8400-e29b-41d4-a716-446655440012",
+    "price": 6.5,
+    "size_options": [
+      "12oz",
+      "16oz"
+    ],
+    "available": true
+  },
+  {
+    "cafe_id": "550e8400-e29b-41d4-a716-446655440034",
+    "coffee_id": "660e8400-e29b-41d4-a716-446655440001",
+    "price": 6.5,
+    "size_options": [
+      "12oz",
+      "16oz"
+    ],
+    "available": true
+  },
+  {
+    "cafe_id": "550e8400-e29b-41d4-a716-446655440034",
+    "coffee_id": "660e8400-e29b-41d4-a716-446655440002",
+    "price": 4.5,
+    "size_options": [
+      "12oz",
+      "16oz"
+    ],
+    "available": true
+  },
+  {
+    "cafe_id": "550e8400-e29b-41d4-a716-446655440034",
+    "coffee_id": "660e8400-e29b-41d4-a716-446655440003",
+    "price": 5.0,
+    "size_options": [
+      "12oz",
+      "16oz"
+    ],
+    "available": true
+  },
+  {
+    "cafe_id": "550e8400-e29b-41d4-a716-446655440034",
+    "coffee_id": "660e8400-e29b-41d4-a716-446655440005",
+    "price": 6.0,
+    "size_options": [
+      "single",
+      "double"
+    ],
+    "available": true
+  },
+  {
+    "cafe_id": "550e8400-e29b-41d4-a716-446655440034",
+    "coffee_id": "660e8400-e29b-41d4-a716-446655440008",
+    "price": 5.0,
+    "size_options": [
+      "12oz",
+      "16oz"
+    ],
+    "available": true
+  },
+  {
+    "cafe_id": "550e8400-e29b-41d4-a716-446655440034",
+    "coffee_id": "660e8400-e29b-41d4-a716-446655440004",
+    "price": 5.5,
+    "size_options": [
+      "12oz",
+      "16oz"
+    ],
+    "available": true
+  },
+  {
+    "cafe_id": "550e8400-e29b-41d4-a716-446655440034",
+    "coffee_id": "660e8400-e29b-41d4-a716-446655440012",
+    "price": 4.5,
+    "size_options": [
+      "12oz",
+      "16oz"
+    ],
+    "available": true
+  },
+  {
+    "cafe_id": "550e8400-e29b-41d4-a716-446655440034",
+    "coffee_id": "660e8400-e29b-41d4-a716-446655440015",
+    "price": 6.0,
+    "size_options": [
+      "12oz",
+      "16oz"
+    ],
+    "available": true
+  },
+  {
+    "cafe_id": "550e8400-e29b-41d4-a716-446655440034",
+    "coffee_id": "660e8400-e29b-41d4-a716-446655440006",
+    "price": 6.5,
+    "size_options": [
+      "12oz",
+      "16oz"
+    ],
+    "available": true
+  },
+  {
+    "cafe_id": "550e8400-e29b-41d4-a716-446655440034",
+    "coffee_id": "660e8400-e29b-41d4-a716-446655440013",
+    "price": 5.0,
+    "size_options": [
+      "12oz",
+      "16oz"
+    ],
+    "available": true
+  },
+  {
+    "cafe_id": "550e8400-e29b-41d4-a716-446655440035",
+    "coffee_id": "660e8400-e29b-41d4-a716-446655440001",
+    "price": 4.5,
+    "size_options": [
+      "12oz",
+      "16oz"
+    ],
+    "available": true
+  },
+  {
+    "cafe_id": "550e8400-e29b-41d4-a716-446655440035",
+    "coffee_id": "660e8400-e29b-41d4-a716-446655440002",
+    "price": 5.0,
+    "size_options": [
+      "12oz",
+      "16oz"
+    ],
+    "available": true
+  },
+  {
+    "cafe_id": "550e8400-e29b-41d4-a716-446655440035",
+    "coffee_id": "660e8400-e29b-41d4-a716-446655440003",
+    "price": 5.5,
+    "size_options": [
+      "12oz",
+      "16oz"
+    ],
+    "available": true
+  },
+  {
+    "cafe_id": "550e8400-e29b-41d4-a716-446655440035",
+    "coffee_id": "660e8400-e29b-41d4-a716-446655440005",
+    "price": 6.5,
+    "size_options": [
+      "single",
+      "double"
+    ],
+    "available": true
+  },
+  {
+    "cafe_id": "550e8400-e29b-41d4-a716-446655440035",
+    "coffee_id": "660e8400-e29b-41d4-a716-446655440008",
+    "price": 5.5,
+    "size_options": [
+      "12oz",
+      "16oz"
+    ],
+    "available": true
+  },
+  {
+    "cafe_id": "550e8400-e29b-41d4-a716-446655440035",
+    "coffee_id": "660e8400-e29b-41d4-a716-446655440015",
+    "price": 6.5,
+    "size_options": [
+      "12oz",
+      "16oz"
+    ],
+    "available": true
+  },
+  {
+    "cafe_id": "550e8400-e29b-41d4-a716-446655440035",
+    "coffee_id": "660e8400-e29b-41d4-a716-446655440010",
+    "price": 6.5,
+    "size_options": [
+      "12oz",
+      "16oz"
+    ],
+    "available": true
+  },
+  {
+    "cafe_id": "550e8400-e29b-41d4-a716-446655440035",
+    "coffee_id": "660e8400-e29b-41d4-a716-446655440006",
+    "price": 4.5,
+    "size_options": [
+      "12oz",
+      "16oz"
+    ],
+    "available": true
+  },
+  {
+    "cafe_id": "550e8400-e29b-41d4-a716-446655440035",
+    "coffee_id": "660e8400-e29b-41d4-a716-446655440012",
+    "price": 5.0,
+    "size_options": [
+      "12oz",
+      "16oz"
+    ],
+    "available": true
+  },
+  {
+    "cafe_id": "550e8400-e29b-41d4-a716-446655440035",
+    "coffee_id": "660e8400-e29b-41d4-a716-446655440007",
+    "price": 5.0,
+    "size_options": [
+      "12oz",
+      "16oz"
+    ],
+    "available": true
+  },
+  {
+    "cafe_id": "550e8400-e29b-41d4-a716-446655440036",
+    "coffee_id": "660e8400-e29b-41d4-a716-446655440001",
+    "price": 5.0,
+    "size_options": [
+      "12oz",
+      "16oz"
+    ],
+    "available": true
+  },
+  {
+    "cafe_id": "550e8400-e29b-41d4-a716-446655440036",
+    "coffee_id": "660e8400-e29b-41d4-a716-446655440002",
+    "price": 5.5,
+    "size_options": [
+      "12oz",
+      "16oz"
+    ],
+    "available": true
+  },
+  {
+    "cafe_id": "550e8400-e29b-41d4-a716-446655440036",
+    "coffee_id": "660e8400-e29b-41d4-a716-446655440003",
+    "price": 6.0,
+    "size_options": [
+      "12oz",
+      "16oz"
+    ],
+    "available": true
+  },
+  {
+    "cafe_id": "550e8400-e29b-41d4-a716-446655440036",
+    "coffee_id": "660e8400-e29b-41d4-a716-446655440005",
+    "price": 4.5,
+    "size_options": [
+      "single",
+      "double"
+    ],
+    "available": true
+  },
+  {
+    "cafe_id": "550e8400-e29b-41d4-a716-446655440036",
+    "coffee_id": "660e8400-e29b-41d4-a716-446655440008",
+    "price": 6.0,
+    "size_options": [
+      "12oz",
+      "16oz"
+    ],
+    "available": true
+  },
+  {
+    "cafe_id": "550e8400-e29b-41d4-a716-446655440036",
+    "coffee_id": "660e8400-e29b-41d4-a716-446655440010",
+    "price": 4.5,
+    "size_options": [
+      "12oz",
+      "16oz"
+    ],
+    "available": true
+  },
+  {
+    "cafe_id": "550e8400-e29b-41d4-a716-446655440036",
+    "coffee_id": "660e8400-e29b-41d4-a716-446655440004",
+    "price": 6.5,
+    "size_options": [
+      "12oz",
+      "16oz"
+    ],
+    "available": true
+  },
+  {
+    "cafe_id": "550e8400-e29b-41d4-a716-446655440036",
+    "coffee_id": "660e8400-e29b-41d4-a716-446655440013",
+    "price": 6.0,
+    "size_options": [
+      "12oz",
+      "16oz"
+    ],
+    "available": true
+  },
+  {
+    "cafe_id": "550e8400-e29b-41d4-a716-446655440036",
+    "coffee_id": "660e8400-e29b-41d4-a716-446655440009",
+    "price": 6.5,
+    "size_options": [
+      "12oz",
+      "16oz"
+    ],
+    "available": true
+  },
+  {
+    "cafe_id": "550e8400-e29b-41d4-a716-446655440036",
+    "coffee_id": "660e8400-e29b-41d4-a716-446655440014",
+    "price": 6.5,
+    "size_options": [
+      "12oz",
+      "16oz"
+    ],
+    "available": true
+  },
+  {
+    "cafe_id": "550e8400-e29b-41d4-a716-446655440037",
+    "coffee_id": "660e8400-e29b-41d4-a716-446655440001",
+    "price": 5.5,
+    "size_options": [
+      "12oz",
+      "16oz"
+    ],
+    "available": true
+  },
+  {
+    "cafe_id": "550e8400-e29b-41d4-a716-446655440037",
+    "coffee_id": "660e8400-e29b-41d4-a716-446655440002",
+    "price": 6.0,
+    "size_options": [
+      "12oz",
+      "16oz"
+    ],
+    "available": true
+  },
+  {
+    "cafe_id": "550e8400-e29b-41d4-a716-446655440037",
+    "coffee_id": "660e8400-e29b-41d4-a716-446655440003",
+    "price": 6.5,
+    "size_options": [
+      "12oz",
+      "16oz"
+    ],
+    "available": true
+  },
+  {
+    "cafe_id": "550e8400-e29b-41d4-a716-446655440037",
+    "coffee_id": "660e8400-e29b-41d4-a716-446655440005",
+    "price": 5.0,
+    "size_options": [
+      "single",
+      "double"
+    ],
+    "available": true
+  },
+  {
+    "cafe_id": "550e8400-e29b-41d4-a716-446655440037",
+    "coffee_id": "660e8400-e29b-41d4-a716-446655440008",
+    "price": 6.5,
+    "size_options": [
+      "12oz",
+      "16oz"
+    ],
+    "available": true
+  },
+  {
+    "cafe_id": "550e8400-e29b-41d4-a716-446655440037",
+    "coffee_id": "660e8400-e29b-41d4-a716-446655440007",
+    "price": 6.0,
+    "size_options": [
+      "12oz",
+      "16oz"
+    ],
+    "available": true
+  },
+  {
+    "cafe_id": "550e8400-e29b-41d4-a716-446655440037",
+    "coffee_id": "660e8400-e29b-41d4-a716-446655440009",
+    "price": 4.5,
+    "size_options": [
+      "12oz",
+      "16oz"
+    ],
+    "available": true
+  },
+  {
+    "cafe_id": "550e8400-e29b-41d4-a716-446655440037",
+    "coffee_id": "660e8400-e29b-41d4-a716-446655440011",
+    "price": 5.5,
+    "size_options": [
+      "12oz",
+      "16oz"
+    ],
+    "available": true
+  },
+  {
+    "cafe_id": "550e8400-e29b-41d4-a716-446655440038",
+    "coffee_id": "660e8400-e29b-41d4-a716-446655440001",
+    "price": 6.0,
+    "size_options": [
+      "12oz",
+      "16oz"
+    ],
+    "available": true
+  },
+  {
+    "cafe_id": "550e8400-e29b-41d4-a716-446655440038",
+    "coffee_id": "660e8400-e29b-41d4-a716-446655440002",
+    "price": 6.5,
+    "size_options": [
+      "12oz",
+      "16oz"
+    ],
+    "available": true
+  },
+  {
+    "cafe_id": "550e8400-e29b-41d4-a716-446655440038",
+    "coffee_id": "660e8400-e29b-41d4-a716-446655440003",
+    "price": 4.5,
+    "size_options": [
+      "12oz",
+      "16oz"
+    ],
+    "available": true
+  },
+  {
+    "cafe_id": "550e8400-e29b-41d4-a716-446655440038",
+    "coffee_id": "660e8400-e29b-41d4-a716-446655440005",
+    "price": 5.5,
+    "size_options": [
+      "single",
+      "double"
+    ],
+    "available": true
+  },
+  {
+    "cafe_id": "550e8400-e29b-41d4-a716-446655440038",
+    "coffee_id": "660e8400-e29b-41d4-a716-446655440008",
+    "price": 4.5,
+    "size_options": [
+      "12oz",
+      "16oz"
+    ],
+    "available": true
+  },
+  {
+    "cafe_id": "550e8400-e29b-41d4-a716-446655440038",
+    "coffee_id": "660e8400-e29b-41d4-a716-446655440010",
+    "price": 5.5,
+    "size_options": [
+      "12oz",
+      "16oz"
+    ],
+    "available": true
+  },
+  {
+    "cafe_id": "550e8400-e29b-41d4-a716-446655440038",
+    "coffee_id": "660e8400-e29b-41d4-a716-446655440015",
+    "price": 5.5,
+    "size_options": [
+      "12oz",
+      "16oz"
+    ],
+    "available": true
+  },
+  {
+    "cafe_id": "550e8400-e29b-41d4-a716-446655440038",
+    "coffee_id": "660e8400-e29b-41d4-a716-446655440012",
+    "price": 6.5,
+    "size_options": [
+      "12oz",
+      "16oz"
+    ],
+    "available": true
+  },
+  {
+    "cafe_id": "550e8400-e29b-41d4-a716-446655440038",
+    "coffee_id": "660e8400-e29b-41d4-a716-446655440013",
+    "price": 4.5,
+    "size_options": [
+      "12oz",
+      "16oz"
+    ],
+    "available": true
+  },
+  {
+    "cafe_id": "550e8400-e29b-41d4-a716-446655440038",
+    "coffee_id": "660e8400-e29b-41d4-a716-446655440009",
+    "price": 5.0,
+    "size_options": [
+      "12oz",
+      "16oz"
+    ],
+    "available": true
+  },
+  {
+    "cafe_id": "550e8400-e29b-41d4-a716-446655440039",
+    "coffee_id": "660e8400-e29b-41d4-a716-446655440001",
+    "price": 6.5,
+    "size_options": [
+      "12oz",
+      "16oz"
+    ],
+    "available": true
+  },
+  {
+    "cafe_id": "550e8400-e29b-41d4-a716-446655440039",
+    "coffee_id": "660e8400-e29b-41d4-a716-446655440002",
+    "price": 4.5,
+    "size_options": [
+      "12oz",
+      "16oz"
+    ],
+    "available": true
+  },
+  {
+    "cafe_id": "550e8400-e29b-41d4-a716-446655440039",
+    "coffee_id": "660e8400-e29b-41d4-a716-446655440003",
+    "price": 5.0,
+    "size_options": [
+      "12oz",
+      "16oz"
+    ],
+    "available": true
+  },
+  {
+    "cafe_id": "550e8400-e29b-41d4-a716-446655440039",
+    "coffee_id": "660e8400-e29b-41d4-a716-446655440005",
+    "price": 6.0,
+    "size_options": [
+      "single",
+      "double"
+    ],
+    "available": true
+  },
+  {
+    "cafe_id": "550e8400-e29b-41d4-a716-446655440039",
+    "coffee_id": "660e8400-e29b-41d4-a716-446655440008",
+    "price": 5.0,
+    "size_options": [
+      "12oz",
+      "16oz"
+    ],
+    "available": true
+  },
+  {
+    "cafe_id": "550e8400-e29b-41d4-a716-446655440039",
+    "coffee_id": "660e8400-e29b-41d4-a716-446655440013",
+    "price": 5.0,
+    "size_options": [
+      "12oz",
+      "16oz"
+    ],
+    "available": true
+  },
+  {
+    "cafe_id": "550e8400-e29b-41d4-a716-446655440039",
+    "coffee_id": "660e8400-e29b-41d4-a716-446655440010",
+    "price": 6.0,
+    "size_options": [
+      "12oz",
+      "16oz"
+    ],
+    "available": true
+  },
+  {
+    "cafe_id": "550e8400-e29b-41d4-a716-446655440039",
+    "coffee_id": "660e8400-e29b-41d4-a716-446655440004",
+    "price": 5.5,
+    "size_options": [
+      "12oz",
+      "16oz"
+    ],
+    "available": true
+  },
+  {
+    "cafe_id": "550e8400-e29b-41d4-a716-446655440039",
+    "coffee_id": "660e8400-e29b-41d4-a716-446655440015",
+    "price": 6.0,
+    "size_options": [
+      "12oz",
+      "16oz"
+    ],
+    "available": true
+  },
+  {
+    "cafe_id": "550e8400-e29b-41d4-a716-446655440040",
+    "coffee_id": "660e8400-e29b-41d4-a716-446655440001",
+    "price": 4.5,
+    "size_options": [
+      "12oz",
+      "16oz"
+    ],
+    "available": true
+  },
+  {
+    "cafe_id": "550e8400-e29b-41d4-a716-446655440040",
+    "coffee_id": "660e8400-e29b-41d4-a716-446655440002",
+    "price": 5.0,
+    "size_options": [
+      "12oz",
+      "16oz"
+    ],
+    "available": true
+  },
+  {
+    "cafe_id": "550e8400-e29b-41d4-a716-446655440040",
+    "coffee_id": "660e8400-e29b-41d4-a716-446655440003",
+    "price": 5.5,
+    "size_options": [
+      "12oz",
+      "16oz"
+    ],
+    "available": true
+  },
+  {
+    "cafe_id": "550e8400-e29b-41d4-a716-446655440040",
+    "coffee_id": "660e8400-e29b-41d4-a716-446655440005",
+    "price": 6.5,
+    "size_options": [
+      "single",
+      "double"
+    ],
+    "available": true
+  },
+  {
+    "cafe_id": "550e8400-e29b-41d4-a716-446655440040",
+    "coffee_id": "660e8400-e29b-41d4-a716-446655440008",
+    "price": 5.5,
+    "size_options": [
+      "12oz",
+      "16oz"
+    ],
+    "available": true
+  },
+  {
+    "cafe_id": "550e8400-e29b-41d4-a716-446655440040",
+    "coffee_id": "660e8400-e29b-41d4-a716-446655440015",
+    "price": 6.5,
+    "size_options": [
+      "12oz",
+      "16oz"
+    ],
+    "available": true
+  },
+  {
+    "cafe_id": "550e8400-e29b-41d4-a716-446655440040",
+    "coffee_id": "660e8400-e29b-41d4-a716-446655440011",
+    "price": 4.5,
+    "size_options": [
+      "12oz",
+      "16oz"
+    ],
+    "available": true
+  },
+  {
+    "cafe_id": "550e8400-e29b-41d4-a716-446655440041",
+    "coffee_id": "660e8400-e29b-41d4-a716-446655440001",
+    "price": 5.0,
+    "size_options": [
+      "12oz",
+      "16oz"
+    ],
+    "available": true
+  },
+  {
+    "cafe_id": "550e8400-e29b-41d4-a716-446655440041",
+    "coffee_id": "660e8400-e29b-41d4-a716-446655440002",
+    "price": 5.5,
+    "size_options": [
+      "12oz",
+      "16oz"
+    ],
+    "available": true
+  },
+  {
+    "cafe_id": "550e8400-e29b-41d4-a716-446655440041",
+    "coffee_id": "660e8400-e29b-41d4-a716-446655440003",
+    "price": 6.0,
+    "size_options": [
+      "12oz",
+      "16oz"
+    ],
+    "available": true
+  },
+  {
+    "cafe_id": "550e8400-e29b-41d4-a716-446655440041",
+    "coffee_id": "660e8400-e29b-41d4-a716-446655440005",
+    "price": 4.5,
+    "size_options": [
+      "single",
+      "double"
+    ],
+    "available": true
+  },
+  {
+    "cafe_id": "550e8400-e29b-41d4-a716-446655440041",
+    "coffee_id": "660e8400-e29b-41d4-a716-446655440008",
+    "price": 6.0,
+    "size_options": [
+      "12oz",
+      "16oz"
+    ],
+    "available": true
+  },
+  {
+    "cafe_id": "550e8400-e29b-41d4-a716-446655440041",
+    "coffee_id": "660e8400-e29b-41d4-a716-446655440013",
+    "price": 6.0,
+    "size_options": [
+      "12oz",
+      "16oz"
+    ],
+    "available": true
+  },
+  {
+    "cafe_id": "550e8400-e29b-41d4-a716-446655440041",
+    "coffee_id": "660e8400-e29b-41d4-a716-446655440011",
+    "price": 5.0,
+    "size_options": [
+      "12oz",
+      "16oz"
+    ],
+    "available": true
+  },
+  {
+    "cafe_id": "550e8400-e29b-41d4-a716-446655440041",
+    "coffee_id": "660e8400-e29b-41d4-a716-446655440009",
+    "price": 6.5,
+    "size_options": [
+      "12oz",
+      "16oz"
+    ],
+    "available": true
+  },
+  {
+    "cafe_id": "550e8400-e29b-41d4-a716-446655440041",
+    "coffee_id": "660e8400-e29b-41d4-a716-446655440010",
+    "price": 4.5,
+    "size_options": [
+      "12oz",
+      "16oz"
+    ],
+    "available": true
+  },
+  {
+    "cafe_id": "550e8400-e29b-41d4-a716-446655440042",
+    "coffee_id": "660e8400-e29b-41d4-a716-446655440001",
+    "price": 5.5,
+    "size_options": [
+      "12oz",
+      "16oz"
+    ],
+    "available": true
+  },
+  {
+    "cafe_id": "550e8400-e29b-41d4-a716-446655440042",
+    "coffee_id": "660e8400-e29b-41d4-a716-446655440002",
+    "price": 6.0,
+    "size_options": [
+      "12oz",
+      "16oz"
+    ],
+    "available": true
+  },
+  {
+    "cafe_id": "550e8400-e29b-41d4-a716-446655440042",
+    "coffee_id": "660e8400-e29b-41d4-a716-446655440003",
+    "price": 6.5,
+    "size_options": [
+      "12oz",
+      "16oz"
+    ],
+    "available": true
+  },
+  {
+    "cafe_id": "550e8400-e29b-41d4-a716-446655440042",
+    "coffee_id": "660e8400-e29b-41d4-a716-446655440005",
+    "price": 5.0,
+    "size_options": [
+      "single",
+      "double"
+    ],
+    "available": true
+  },
+  {
+    "cafe_id": "550e8400-e29b-41d4-a716-446655440042",
+    "coffee_id": "660e8400-e29b-41d4-a716-446655440008",
+    "price": 6.5,
+    "size_options": [
+      "12oz",
+      "16oz"
+    ],
+    "available": true
+  },
+  {
+    "cafe_id": "550e8400-e29b-41d4-a716-446655440042",
+    "coffee_id": "660e8400-e29b-41d4-a716-446655440012",
+    "price": 6.0,
+    "size_options": [
+      "12oz",
+      "16oz"
+    ],
+    "available": true
+  },
+  {
+    "cafe_id": "550e8400-e29b-41d4-a716-446655440042",
+    "coffee_id": "660e8400-e29b-41d4-a716-446655440004",
+    "price": 4.5,
+    "size_options": [
+      "12oz",
+      "16oz"
+    ],
+    "available": true
+  },
+  {
+    "cafe_id": "550e8400-e29b-41d4-a716-446655440042",
+    "coffee_id": "660e8400-e29b-41d4-a716-446655440006",
+    "price": 5.5,
+    "size_options": [
+      "12oz",
+      "16oz"
+    ],
+    "available": true
+  },
+  {
+    "cafe_id": "550e8400-e29b-41d4-a716-446655440042",
+    "coffee_id": "660e8400-e29b-41d4-a716-446655440015",
+    "price": 5.0,
+    "size_options": [
+      "12oz",
+      "16oz"
+    ],
+    "available": true
+  },
+  {
+    "cafe_id": "550e8400-e29b-41d4-a716-446655440043",
+    "coffee_id": "660e8400-e29b-41d4-a716-446655440001",
+    "price": 6.0,
+    "size_options": [
+      "12oz",
+      "16oz"
+    ],
+    "available": true
+  },
+  {
+    "cafe_id": "550e8400-e29b-41d4-a716-446655440043",
+    "coffee_id": "660e8400-e29b-41d4-a716-446655440002",
+    "price": 6.5,
+    "size_options": [
+      "12oz",
+      "16oz"
+    ],
+    "available": true
+  },
+  {
+    "cafe_id": "550e8400-e29b-41d4-a716-446655440043",
+    "coffee_id": "660e8400-e29b-41d4-a716-446655440003",
+    "price": 4.5,
+    "size_options": [
+      "12oz",
+      "16oz"
+    ],
+    "available": true
+  },
+  {
+    "cafe_id": "550e8400-e29b-41d4-a716-446655440043",
+    "coffee_id": "660e8400-e29b-41d4-a716-446655440005",
+    "price": 5.5,
+    "size_options": [
+      "single",
+      "double"
+    ],
+    "available": true
+  },
+  {
+    "cafe_id": "550e8400-e29b-41d4-a716-446655440043",
+    "coffee_id": "660e8400-e29b-41d4-a716-446655440008",
+    "price": 4.5,
+    "size_options": [
+      "12oz",
+      "16oz"
+    ],
+    "available": true
+  },
+  {
+    "cafe_id": "550e8400-e29b-41d4-a716-446655440043",
+    "coffee_id": "660e8400-e29b-41d4-a716-446655440013",
+    "price": 4.5,
+    "size_options": [
+      "12oz",
+      "16oz"
+    ],
+    "available": true
+  },
+  {
+    "cafe_id": "550e8400-e29b-41d4-a716-446655440044",
+    "coffee_id": "660e8400-e29b-41d4-a716-446655440001",
+    "price": 6.5,
+    "size_options": [
+      "12oz",
+      "16oz"
+    ],
+    "available": true
+  },
+  {
+    "cafe_id": "550e8400-e29b-41d4-a716-446655440044",
+    "coffee_id": "660e8400-e29b-41d4-a716-446655440002",
+    "price": 4.5,
+    "size_options": [
+      "12oz",
+      "16oz"
+    ],
+    "available": true
+  },
+  {
+    "cafe_id": "550e8400-e29b-41d4-a716-446655440044",
+    "coffee_id": "660e8400-e29b-41d4-a716-446655440003",
+    "price": 5.0,
+    "size_options": [
+      "12oz",
+      "16oz"
+    ],
+    "available": true
+  },
+  {
+    "cafe_id": "550e8400-e29b-41d4-a716-446655440044",
+    "coffee_id": "660e8400-e29b-41d4-a716-446655440005",
+    "price": 6.0,
+    "size_options": [
+      "single",
+      "double"
+    ],
+    "available": true
+  },
+  {
+    "cafe_id": "550e8400-e29b-41d4-a716-446655440044",
+    "coffee_id": "660e8400-e29b-41d4-a716-446655440008",
+    "price": 5.0,
+    "size_options": [
+      "12oz",
+      "16oz"
+    ],
+    "available": true
+  },
+  {
+    "cafe_id": "550e8400-e29b-41d4-a716-446655440044",
+    "coffee_id": "660e8400-e29b-41d4-a716-446655440015",
+    "price": 6.0,
+    "size_options": [
+      "12oz",
+      "16oz"
+    ],
+    "available": true
+  },
+  {
+    "cafe_id": "550e8400-e29b-41d4-a716-446655440045",
+    "coffee_id": "660e8400-e29b-41d4-a716-446655440001",
+    "price": 4.5,
+    "size_options": [
+      "12oz",
+      "16oz"
+    ],
+    "available": true
+  },
+  {
+    "cafe_id": "550e8400-e29b-41d4-a716-446655440045",
+    "coffee_id": "660e8400-e29b-41d4-a716-446655440002",
+    "price": 5.0,
+    "size_options": [
+      "12oz",
+      "16oz"
+    ],
+    "available": true
+  },
+  {
+    "cafe_id": "550e8400-e29b-41d4-a716-446655440045",
+    "coffee_id": "660e8400-e29b-41d4-a716-446655440003",
+    "price": 5.5,
+    "size_options": [
+      "12oz",
+      "16oz"
+    ],
+    "available": true
+  },
+  {
+    "cafe_id": "550e8400-e29b-41d4-a716-446655440045",
+    "coffee_id": "660e8400-e29b-41d4-a716-446655440005",
+    "price": 6.5,
+    "size_options": [
+      "single",
+      "double"
+    ],
+    "available": true
+  },
+  {
+    "cafe_id": "550e8400-e29b-41d4-a716-446655440045",
+    "coffee_id": "660e8400-e29b-41d4-a716-446655440008",
+    "price": 5.5,
+    "size_options": [
+      "12oz",
+      "16oz"
+    ],
+    "available": true
+  },
+  {
+    "cafe_id": "550e8400-e29b-41d4-a716-446655440045",
+    "coffee_id": "660e8400-e29b-41d4-a716-446655440010",
+    "price": 6.5,
+    "size_options": [
+      "12oz",
+      "16oz"
+    ],
+    "available": true
+  },
+  {
+    "cafe_id": "550e8400-e29b-41d4-a716-446655440045",
+    "coffee_id": "660e8400-e29b-41d4-a716-446655440011",
+    "price": 4.5,
+    "size_options": [
+      "12oz",
+      "16oz"
+    ],
+    "available": true
+  },
+  {
+    "cafe_id": "550e8400-e29b-41d4-a716-446655440045",
+    "coffee_id": "660e8400-e29b-41d4-a716-446655440004",
+    "price": 6.0,
+    "size_options": [
+      "12oz",
+      "16oz"
+    ],
+    "available": true
+  },
+  {
+    "cafe_id": "550e8400-e29b-41d4-a716-446655440045",
+    "coffee_id": "660e8400-e29b-41d4-a716-446655440007",
+    "price": 5.0,
+    "size_options": [
+      "12oz",
+      "16oz"
+    ],
+    "available": true
+  },
+  {
+    "cafe_id": "550e8400-e29b-41d4-a716-446655440046",
+    "coffee_id": "660e8400-e29b-41d4-a716-446655440001",
+    "price": 5.0,
+    "size_options": [
+      "12oz",
+      "16oz"
+    ],
+    "available": true
+  },
+  {
+    "cafe_id": "550e8400-e29b-41d4-a716-446655440046",
+    "coffee_id": "660e8400-e29b-41d4-a716-446655440002",
+    "price": 5.5,
+    "size_options": [
+      "12oz",
+      "16oz"
+    ],
+    "available": true
+  },
+  {
+    "cafe_id": "550e8400-e29b-41d4-a716-446655440046",
+    "coffee_id": "660e8400-e29b-41d4-a716-446655440003",
+    "price": 6.0,
+    "size_options": [
+      "12oz",
+      "16oz"
+    ],
+    "available": true
+  },
+  {
+    "cafe_id": "550e8400-e29b-41d4-a716-446655440046",
+    "coffee_id": "660e8400-e29b-41d4-a716-446655440005",
+    "price": 4.5,
+    "size_options": [
+      "single",
+      "double"
+    ],
+    "available": true
+  },
+  {
+    "cafe_id": "550e8400-e29b-41d4-a716-446655440046",
+    "coffee_id": "660e8400-e29b-41d4-a716-446655440008",
+    "price": 6.0,
+    "size_options": [
+      "12oz",
+      "16oz"
+    ],
+    "available": true
+  },
+  {
+    "cafe_id": "550e8400-e29b-41d4-a716-446655440046",
+    "coffee_id": "660e8400-e29b-41d4-a716-446655440014",
+    "price": 6.5,
+    "size_options": [
+      "12oz",
+      "16oz"
+    ],
+    "available": true
+  },
+  {
+    "cafe_id": "550e8400-e29b-41d4-a716-446655440046",
+    "coffee_id": "660e8400-e29b-41d4-a716-446655440006",
+    "price": 5.0,
+    "size_options": [
+      "12oz",
+      "16oz"
+    ],
+    "available": true
+  },
+  {
+    "cafe_id": "550e8400-e29b-41d4-a716-446655440046",
+    "coffee_id": "660e8400-e29b-41d4-a716-446655440009",
+    "price": 6.5,
+    "size_options": [
+      "12oz",
+      "16oz"
+    ],
+    "available": true
+  },
+  {
+    "cafe_id": "550e8400-e29b-41d4-a716-446655440047",
+    "coffee_id": "660e8400-e29b-41d4-a716-446655440001",
+    "price": 5.5,
+    "size_options": [
+      "12oz",
+      "16oz"
+    ],
+    "available": true
+  },
+  {
+    "cafe_id": "550e8400-e29b-41d4-a716-446655440047",
+    "coffee_id": "660e8400-e29b-41d4-a716-446655440002",
+    "price": 6.0,
+    "size_options": [
+      "12oz",
+      "16oz"
+    ],
+    "available": true
+  },
+  {
+    "cafe_id": "550e8400-e29b-41d4-a716-446655440047",
+    "coffee_id": "660e8400-e29b-41d4-a716-446655440003",
+    "price": 6.5,
+    "size_options": [
+      "12oz",
+      "16oz"
+    ],
+    "available": true
+  },
+  {
+    "cafe_id": "550e8400-e29b-41d4-a716-446655440047",
+    "coffee_id": "660e8400-e29b-41d4-a716-446655440005",
+    "price": 5.0,
+    "size_options": [
+      "single",
+      "double"
+    ],
+    "available": true
+  },
+  {
+    "cafe_id": "550e8400-e29b-41d4-a716-446655440047",
+    "coffee_id": "660e8400-e29b-41d4-a716-446655440008",
+    "price": 6.5,
+    "size_options": [
+      "12oz",
+      "16oz"
+    ],
+    "available": true
+  },
+  {
+    "cafe_id": "550e8400-e29b-41d4-a716-446655440047",
+    "coffee_id": "660e8400-e29b-41d4-a716-446655440015",
+    "price": 5.0,
+    "size_options": [
+      "12oz",
+      "16oz"
+    ],
+    "available": true
+  },
+  {
+    "cafe_id": "550e8400-e29b-41d4-a716-446655440048",
+    "coffee_id": "660e8400-e29b-41d4-a716-446655440001",
+    "price": 6.0,
+    "size_options": [
+      "12oz",
+      "16oz"
+    ],
+    "available": true
+  },
+  {
+    "cafe_id": "550e8400-e29b-41d4-a716-446655440048",
+    "coffee_id": "660e8400-e29b-41d4-a716-446655440002",
+    "price": 6.5,
+    "size_options": [
+      "12oz",
+      "16oz"
+    ],
+    "available": true
+  },
+  {
+    "cafe_id": "550e8400-e29b-41d4-a716-446655440048",
+    "coffee_id": "660e8400-e29b-41d4-a716-446655440003",
+    "price": 4.5,
+    "size_options": [
+      "12oz",
+      "16oz"
+    ],
+    "available": true
+  },
+  {
+    "cafe_id": "550e8400-e29b-41d4-a716-446655440048",
+    "coffee_id": "660e8400-e29b-41d4-a716-446655440005",
+    "price": 5.5,
+    "size_options": [
+      "single",
+      "double"
+    ],
+    "available": true
+  },
+  {
+    "cafe_id": "550e8400-e29b-41d4-a716-446655440048",
+    "coffee_id": "660e8400-e29b-41d4-a716-446655440008",
+    "price": 4.5,
+    "size_options": [
+      "12oz",
+      "16oz"
+    ],
+    "available": true
+  },
+  {
+    "cafe_id": "550e8400-e29b-41d4-a716-446655440048",
+    "coffee_id": "660e8400-e29b-41d4-a716-446655440014",
+    "price": 5.0,
+    "size_options": [
+      "12oz",
+      "16oz"
+    ],
+    "available": true
+  },
+  {
+    "cafe_id": "550e8400-e29b-41d4-a716-446655440048",
+    "coffee_id": "660e8400-e29b-41d4-a716-446655440004",
+    "price": 5.0,
+    "size_options": [
+      "12oz",
+      "16oz"
+    ],
+    "available": true
+  },
+  {
+    "cafe_id": "550e8400-e29b-41d4-a716-446655440048",
+    "coffee_id": "660e8400-e29b-41d4-a716-446655440015",
+    "price": 5.5,
+    "size_options": [
+      "12oz",
+      "16oz"
+    ],
+    "available": true
+  },
+  {
+    "cafe_id": "550e8400-e29b-41d4-a716-446655440049",
+    "coffee_id": "660e8400-e29b-41d4-a716-446655440001",
+    "price": 6.5,
+    "size_options": [
+      "12oz",
+      "16oz"
+    ],
+    "available": true
+  },
+  {
+    "cafe_id": "550e8400-e29b-41d4-a716-446655440049",
+    "coffee_id": "660e8400-e29b-41d4-a716-446655440002",
+    "price": 4.5,
+    "size_options": [
+      "12oz",
+      "16oz"
+    ],
+    "available": true
+  },
+  {
+    "cafe_id": "550e8400-e29b-41d4-a716-446655440049",
+    "coffee_id": "660e8400-e29b-41d4-a716-446655440003",
+    "price": 5.0,
+    "size_options": [
+      "12oz",
+      "16oz"
+    ],
+    "available": true
+  },
+  {
+    "cafe_id": "550e8400-e29b-41d4-a716-446655440049",
+    "coffee_id": "660e8400-e29b-41d4-a716-446655440005",
+    "price": 6.0,
+    "size_options": [
+      "single",
+      "double"
+    ],
+    "available": true
+  },
+  {
+    "cafe_id": "550e8400-e29b-41d4-a716-446655440049",
+    "coffee_id": "660e8400-e29b-41d4-a716-446655440008",
+    "price": 5.0,
+    "size_options": [
+      "12oz",
+      "16oz"
+    ],
+    "available": true
+  },
+  {
+    "cafe_id": "550e8400-e29b-41d4-a716-446655440049",
+    "coffee_id": "660e8400-e29b-41d4-a716-446655440015",
+    "price": 6.0,
+    "size_options": [
+      "12oz",
+      "16oz"
+    ],
+    "available": true
+  },
+  {
+    "cafe_id": "550e8400-e29b-41d4-a716-446655440049",
+    "coffee_id": "660e8400-e29b-41d4-a716-446655440014",
+    "price": 5.5,
+    "size_options": [
+      "12oz",
+      "16oz"
+    ],
+    "available": true
+  },
+  {
+    "cafe_id": "550e8400-e29b-41d4-a716-446655440049",
+    "coffee_id": "660e8400-e29b-41d4-a716-446655440004",
+    "price": 5.5,
+    "size_options": [
+      "12oz",
+      "16oz"
+    ],
+    "available": true
+  },
+  {
+    "cafe_id": "550e8400-e29b-41d4-a716-446655440049",
+    "coffee_id": "660e8400-e29b-41d4-a716-446655440009",
+    "price": 5.5,
+    "size_options": [
+      "12oz",
+      "16oz"
+    ],
+    "available": true
+  },
+  {
+    "cafe_id": "550e8400-e29b-41d4-a716-446655440049",
+    "coffee_id": "660e8400-e29b-41d4-a716-446655440006",
+    "price": 6.5,
+    "size_options": [
+      "12oz",
+      "16oz"
+    ],
+    "available": true
+  },
+  {
+    "cafe_id": "550e8400-e29b-41d4-a716-446655440050",
+    "coffee_id": "660e8400-e29b-41d4-a716-446655440001",
+    "price": 4.5,
+    "size_options": [
+      "12oz",
+      "16oz"
+    ],
+    "available": true
+  },
+  {
+    "cafe_id": "550e8400-e29b-41d4-a716-446655440050",
+    "coffee_id": "660e8400-e29b-41d4-a716-446655440002",
+    "price": 5.0,
+    "size_options": [
+      "12oz",
+      "16oz"
+    ],
+    "available": true
+  },
+  {
+    "cafe_id": "550e8400-e29b-41d4-a716-446655440050",
+    "coffee_id": "660e8400-e29b-41d4-a716-446655440003",
+    "price": 5.5,
+    "size_options": [
+      "12oz",
+      "16oz"
+    ],
+    "available": true
+  },
+  {
+    "cafe_id": "550e8400-e29b-41d4-a716-446655440050",
+    "coffee_id": "660e8400-e29b-41d4-a716-446655440005",
+    "price": 6.5,
+    "size_options": [
+      "single",
+      "double"
+    ],
+    "available": true
+  },
+  {
+    "cafe_id": "550e8400-e29b-41d4-a716-446655440050",
+    "coffee_id": "660e8400-e29b-41d4-a716-446655440008",
+    "price": 5.5,
+    "size_options": [
+      "12oz",
+      "16oz"
+    ],
+    "available": true
+  },
+  {
+    "cafe_id": "550e8400-e29b-41d4-a716-446655440050",
+    "coffee_id": "660e8400-e29b-41d4-a716-446655440013",
+    "price": 5.5,
+    "size_options": [
+      "12oz",
+      "16oz"
+    ],
+    "available": true
+  }
+]

@@ -1,0 +1,145 @@
+.taste-quiz {
+  max-width: 520px;
+  margin: 0 auto;
+  padding: var(--space-8) var(--space-6);
+  min-height: 80vh;
+}
+
+.taste-quiz__header {
+  margin-bottom: var(--space-8);
+}
+
+.taste-quiz__back {
+  display: inline-block;
+  margin-bottom: var(--space-4);
+  font-size: 0.9rem;
+  color: var(--color-text-muted);
+}
+
+.taste-quiz__back:hover {
+  color: var(--color-accent);
+}
+
+.taste-quiz__sub {
+  font-size: 1rem;
+  color: var(--color-text-muted);
+  margin-top: var(--space-1);
+}
+
+.taste-quiz__progress {
+  height: 4px;
+  background: var(--color-border);
+  border-radius: var(--radius-full);
+  margin-bottom: var(--space-8);
+  overflow: hidden;
+}
+
+.taste-quiz__progress-bar {
+  height: 100%;
+  background: var(--color-accent);
+  transition: width 0.3s ease;
+}
+
+.taste-quiz__section h2 {
+  font-size: 1.25rem;
+  margin-bottom: var(--space-6);
+}
+
+.taste-quiz__options {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+}
+
+.taste-quiz__option {
+  text-align: left;
+  padding: var(--space-4);
+  border: 2px solid var(--color-border);
+  border-radius: var(--radius-md);
+  background: var(--color-surface);
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.taste-quiz__option:hover {
+  border-color: var(--color-accent);
+}
+
+.taste-quiz__option.active {
+  border-color: var(--color-accent);
+  background: var(--color-accent-soft);
+}
+
+.taste-quiz__option-label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: var(--space-1);
+}
+
+.taste-quiz__option-desc {
+  font-size: 0.9rem;
+  color: var(--color-text-muted);
+}
+
+.taste-quiz__chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-3);
+}
+
+.taste-quiz__chips--multi .taste-quiz__chip.active {
+  background: var(--color-accent);
+  color: white;
+}
+
+.taste-quiz__chip {
+  padding: var(--space-3) var(--space-5);
+  border: 2px solid var(--color-border);
+  border-radius: var(--radius-full);
+  background: var(--color-surface);
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.taste-quiz__chip:hover {
+  border-color: var(--color-accent);
+}
+
+.taste-quiz__chip.active {
+  border-color: var(--color-accent);
+  background: var(--color-accent-soft);
+  color: var(--color-accent);
+}
+
+.taste-quiz__footer {
+  margin-top: var(--space-12);
+}
+
+.taste-quiz__btn {
+  width: 100%;
+  padding: var(--space-4);
+  border: 2px solid var(--color-text);
+  border-radius: var(--radius-md);
+  background: transparent;
+  font-weight: 600;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.taste-quiz__btn:hover {
+  background: var(--color-text);
+  color: white;
+}
+
+.taste-quiz__btn--primary {
+  background: var(--color-accent);
+  border-color: var(--color-accent);
+  color: white;
+}
+
+.taste-quiz__btn--primary:hover {
+  background: var(--color-accent-hover);
+  border-color: var(--color-accent-hover);
+}
