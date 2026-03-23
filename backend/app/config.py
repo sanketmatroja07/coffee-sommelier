@@ -13,6 +13,9 @@ class Settings(BaseSettings):
     jwt_algorithm: str = "HS256"
     jwt_expire_minutes: int = 10080  # 7 days
     rate_limit_per_minute: int = 60
+    google_places_api_key: str | None = None
+    google_places_region_code: str = "US"
+    google_places_max_results: int = 12
 
     class Config:
         env_file = ".env"

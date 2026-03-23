@@ -21,7 +21,7 @@ from app.schemas import (
 from app.scoring.engine import ScoringEngine, ProductRecord, UserVector, ScoreResult
 from app.scoring.explanation import build_reasons
 from app.scoring.brew_guide import get_brew_guide
-from app.routers import discover, cafes, orders, auth, geocode, partner
+from app.routers import auth, cafes, discover, geocode, me, orders, partner, recommendations
 
 security = HTTPBasic()
 
@@ -46,6 +46,8 @@ app.include_router(orders.router)
 app.include_router(auth.router)
 app.include_router(geocode.router)
 app.include_router(partner.router)
+app.include_router(me.router)
+app.include_router(recommendations.router)
 
 
 class ConsumerEventInput(PydanticBase):

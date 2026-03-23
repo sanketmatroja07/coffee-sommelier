@@ -20,6 +20,7 @@ import { Partner } from "./pages/Partner";
 import { Favorites } from "./pages/Favorites";
 import { Contact } from "./pages/Contact";
 import { NotFound } from "./pages/NotFound";
+import { Recommendations } from "./pages/Recommendations";
 import { ErrorBoundary } from "./components/ErrorBoundary";
 import { OfflineBanner } from "./components/OfflineBanner";
 
@@ -48,6 +49,7 @@ function AppContent() {
       <Route path="/quiz" element={<TasteQuiz />} />
       <Route path="/partner" element={<Partner apiBase={API_BASE} />} />
       <Route path="/favorites" element={<Favorites />} />
+      <Route path="/recommendations" element={<Recommendations apiBase={API_BASE} />} />
       <Route path="*" element={<NotFound />} />
     </Routes>
     </main>

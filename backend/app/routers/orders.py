@@ -1,5 +1,5 @@
 """Orders API - create and list orders."""
-from datetime import datetime
+from datetime import datetime, timezone
 from fastapi import APIRouter, Depends, HTTPException
 from pydantic import BaseModel
 from sqlalchemy import select
@@ -49,7 +49,11 @@ async def create_order(
     pickup_dt = None
     if body.pickup_at:
         try:
-            pickup_dt = datetime.fromisoformat(body.pickup_at.replace("Z", "+00:00"))
+            parsed = datetime.fromisoformat(body.pickup_at.replace("Z", "+00:00"))
+            if parsed.tzinfo is not None:
+                pickup_dt = parsed.astimezone(timezone.utc).replace(tzinfo=None)
+            else:
+                pickup_dt = parsed
         except (ValueError, TypeError):
             pass
     order = Order(

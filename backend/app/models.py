@@ -192,3 +192,17 @@ class UserPreference(Base):
     id = Column(UUID(as_uuid=False), primary_key=True, default=gen_uuid)
     user_id = Column(UUID(as_uuid=False), ForeignKey("users.id"), nullable=False)
     preference_vector = Column(JSONB, nullable=True)
+
+
+class UserRecommendationHistory(Base):
+    __tablename__ = "user_recommendation_history"
+    id = Column(UUID(as_uuid=False), primary_key=True, default=gen_uuid)
+    user_id = Column(UUID(as_uuid=False), ForeignKey("users.id"), nullable=False)
+    location_label = Column(String(255), nullable=True)
+    lat = Column(Float, nullable=False)
+    lng = Column(Float, nullable=False)
+    radius_km = Column(Float, nullable=False, default=15.0)
+    preference_vector = Column(JSONB, nullable=False)
+    recommendations = Column(JSONB, nullable=False)
+    external_places = Column(JSONB, nullable=True)
+    created_at = Column(DateTime, default=datetime.utcnow)

@@ -26,6 +26,11 @@ interface Cafe {
   lng: number;
   distance_km: number;
   rating: number;
+  detail_url?: string;
+  directions_url?: string;
+  order_url?: string;
+  is_chain?: boolean;
+  brand?: string | null;
 }
 
 interface CafeMapProps {
@@ -37,7 +42,11 @@ interface CafeMapProps {
 function RecenterControl({ center }: { center: [number, number] }) {
   const map = useMap();
   useEffect(() => {
-    map.setView(center, map.getZoom());
+    // Split/list view toggles can leave Leaflet with stale dimensions.
+    requestAnimationFrame(() => {
+      map.invalidateSize();
+      map.setView(center, map.getZoom());
+    });
   }, [center, map]);
   return null;
 }
@@ -74,11 +83,39 @@ export function CafeMap({ cafes, center, showUserMarker = true }: CafeMapProps) 
         {cafes.map((cafe) => (
           <Marker key={cafe.id} position={[cafe.lat, cafe.lng]}>
             <Popup>
-              <a href={`/cafes/${cafe.id}`} style={{ fontWeight: 600 }}>
+              {cafe.is_chain && cafe.brand ? (
+                <>
+                  <strong style={{ color: "#9a5b20", fontSize: "0.8rem" }}>{cafe.brand}</strong>
+                  <br />
+                </>
+              ) : null}
+              <a
+                href={cafe.detail_url ?? `/cafes/${cafe.id}`}
+                style={{ fontWeight: 600 }}
+                target={cafe.detail_url?.startsWith("http") ? "_blank" : undefined}
+                rel={cafe.detail_url?.startsWith("http") ? "noreferrer" : undefined}
+              >
                 {cafe.name}
               </a>
               <br />
               {cafe.distance_km.toFixed(1)} km · ★ {cafe.rating}
+              {(cafe.directions_url || cafe.order_url) && (
+                <>
+                  <br />
+                  <div style={{ display: "flex", gap: "0.5rem", marginTop: "0.5rem", flexWrap: "wrap" }}>
+                    {cafe.directions_url && (
+                      <a href={cafe.directions_url} target="_blank" rel="noreferrer">
+                        Directions
+                      </a>
+                    )}
+                    {cafe.order_url && (
+                      <a href={cafe.order_url} target="_blank" rel="noreferrer">
+                        Order online
+                      </a>
+                    )}
+                  </div>
+                </>
+              )}
             </Popup>
           </Marker>
         ))}

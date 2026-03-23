@@ -17,6 +17,7 @@ export function NavBar({ transparent }: { transparent?: boolean }) {
         {user ? (
           <div className="navbar__user">
             <Link to="/favorites" className="navbar__link">Favorites</Link>
+            <Link to="/recommendations" className="navbar__link">Matches</Link>
             <Link to="/orders" className="navbar__link">Orders</Link>
             <span className="navbar__email">{user.email}</span>
             <button onClick={logout} className="navbar__logout">Log out</button>

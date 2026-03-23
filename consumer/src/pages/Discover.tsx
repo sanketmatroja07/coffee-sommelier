@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { useSearchParams, Link } from "react-router-dom";
+import { useAuth } from "../context/AuthContext";
 import { useToast } from "../context/ToastContext";
 import { usePreferences } from "../context/PreferenceContext";
 import { track } from "../lib/analytics";
@@ -20,6 +21,36 @@ interface Cafe {
   image_url: string | null;
   serves: string[];
   menu_count: number;
+  match_score?: number;
+  reasons?: string[];
+  recommended_coffee?: {
+    id: string;
+    name: string;
+    origin: string | null;
+    roast_level: number;
+    price: number;
+    size_options: string[];
+    flavor_tags: string[];
+    description?: string | null;
+  };
+}
+
+interface NearbyPlace {
+  id: string;
+  name: string;
+  address: string;
+  lat: number;
+  lng: number;
+  distance_km: number;
+  rating: number | null;
+  user_rating_count?: number | null;
+  open_now?: boolean | null;
+  maps_url?: string | null;
+  directions_url?: string | null;
+  website?: string | null;
+  order_url?: string | null;
+  brand?: string | null;
+  is_chain?: boolean;
 }
 
 interface DiscoverProps {
@@ -54,8 +85,15 @@ export function Discover({ apiBase }: DiscoverProps) {
   const [addressQuery, setAddressQuery] = useState(qParam);
   const [searching, setSearching] = useState(false);
   const [error, setError] = useState<string | null>(null);
+  const [recommendedCafes, setRecommendedCafes] = useState<Cafe[]>([]);
+  const [nearbyPlaces, setNearbyPlaces] = useState<NearbyPlace[]>([]);
+  const [mapsProvider, setMapsProvider] = useState("local_catalog");
   const toast = useToast();
-  const { preferences } = usePreferences();
+  const { preferences, hasCompletedQuiz } = usePreferences();
+  const { getAuthHeader } = useAuth();
+  const hasRecommendationProfile =
+    hasCompletedQuiz ||
+    Boolean(roastParam || originParam || brewParam || flavorParam);
 
   const doSearch = async () => {
     if (addressQuery.length < 2) return;
@@ -115,7 +153,7 @@ export function Discover({ apiBase }: DiscoverProps) {
     track("discover_view");
   }, []);
   useEffect(() => {
-    const roast = roastParam || (preferences.roast ? String(preferences.roast) : "");
+    const roast = roastParam || (preferences.roast_preference ? String(preferences.roast_preference) : "");
     const origin = originParam || preferences.origin || "";
     const brew = brewParam || preferences.brew_method || "";
     const flavor = flavorParam || (preferences.flavor_tags?.length ? preferences.flavor_tags.join(",") : "");
@@ -225,6 +263,111 @@ export function Discover({ apiBase }: DiscoverProps) {
       });
     return () => { cancelled = true; };
   }, [apiBase, coords, locationState, filters.roast, filters.origin, filters.brew_method, filters.flavor_tags, radiusKm, sortBy]);
+
+  useEffect(() => {
+    if (!coords || locationState !== "ready") {
+      setNearbyPlaces([]);
+      return;
+    }
+    fetch(`${apiBase}/api/v1/places/nearby?lat=${coords.lat}&lng=${coords.lng}&radius_km=${radiusKm}`)
+      .then((r) => {
+        if (!r.ok) throw new Error("Failed");
+        return r.json();
+      })
+      .then((data) => {
+        setNearbyPlaces(data.places || []);
+        setMapsProvider(data.maps_provider || "unavailable");
+      })
+      .catch(() => {
+        setNearbyPlaces([]);
+      });
+  }, [apiBase, coords, locationState, radiusKm]);
+
+  useEffect(() => {
+    if (!coords || locationState !== "ready" || !hasRecommendationProfile) {
+      setRecommendedCafes([]);
+      return;
+    }
+
+    const preferencePayload = {
+      roast_preference: Number(filters.roast || preferences.roast_preference || 3),
+      acidity_preference: preferences.acidity_preference || 3,
+      body_preference: preferences.body_preference || 3,
+      sweetness_preference: preferences.sweetness_preference || 3,
+      flavor_tags: filters.flavor_tags
+        ? filters.flavor_tags.split(",").map((tag) => tag.trim()).filter(Boolean)
+        : preferences.flavor_tags || [],
+      brew_method: filters.brew_method || preferences.brew_method || "pour_over",
+      caffeine: preferences.caffeine || "full",
+      price_max: preferences.price_max,
+      milk: preferences.milk || false,
+      origin: filters.origin || preferences.origin,
+    };
+
+    fetch(`${apiBase}/api/v1/recommendations/nearby`, {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+        ...(getAuthHeader() ?? {}),
+      },
+      body: JSON.stringify({
+        lat: coords.lat,
+        lng: coords.lng,
+        location_label: addressQuery || qParam || undefined,
+        radius_km: radiusKm,
+        preferences: preferencePayload,
+      }),
+    })
+      .then((r) => {
+        if (!r.ok) throw new Error("Failed");
+        return r.json();
+      })
+      .then((data) => {
+        setRecommendedCafes(data.recommended_cafes || []);
+      })
+      .catch(() => {
+        setRecommendedCafes([]);
+      });
+  }, [
+    apiBase,
+    coords,
+    locationState,
+    hasRecommendationProfile,
+    filters.roast,
+    filters.origin,
+    filters.brew_method,
+    filters.flavor_tags,
+    radiusKm,
+    preferences.roast_preference,
+    preferences.acidity_preference,
+    preferences.body_preference,
+    preferences.sweetness_preference,
+    preferences.brew_method,
+    preferences.flavor_tags,
+    preferences.caffeine,
+    preferences.price_max,
+    preferences.milk,
+    preferences.origin,
+    getAuthHeader,
+    addressQuery,
+    qParam,
+  ]);
+
+  const mapCafes = [
+    ...cafes,
+    ...nearbyPlaces.map((place) => ({
+      ...place,
+      address: place.address || "",
+      rating: place.rating ?? 0,
+      image_url: null,
+      serves: [],
+      menu_count: 0,
+      detail_url: place.maps_url ?? place.website ?? undefined,
+      directions_url: place.directions_url ?? undefined,
+      order_url: place.order_url ?? place.website ?? undefined,
+    })),
+  ];
+  const hasVisiblePlaces = cafes.length > 0 || nearbyPlaces.length > 0;
 
   return (
     <div className="discover">
@@ -380,24 +523,138 @@ export function Discover({ apiBase }: DiscoverProps) {
           <div className="skeleton skeleton--card" />
         </div>
       ) : null}
-      {coords && !error && !loading && cafes.length === 0 ? (
+      {coords && !loading && hasRecommendationProfile && (recommendedCafes.length > 0 || nearbyPlaces.length > 0) && (
+        <section className="discover__recommendations">
+          <div className="discover__recommendations-head">
+            <div>
+              <p className="discover__eyebrow">AI-powered match</p>
+              <h2>Best cafes for your taste right now</h2>
+            </div>
+            <p className="discover__recommendations-note">
+              {mapsProvider === "google_places"
+                ? "Taste-matched cafes from our catalog plus live nearby coffee shops from Google Places."
+                : "Taste-matched cafes from the current catalog near your selected location."}
+            </p>
+          </div>
+          {recommendedCafes.length > 0 ? (
+            <div className="discover__recommendation-grid">
+              {recommendedCafes.map((cafe) => (
+                <article key={`rec-${cafe.id}`} className="discover__recommendation-card">
+                  <div className="discover__recommendation-top">
+                    <div>
+                      <p className="discover__recommendation-score">Match {Math.round((cafe.match_score ?? 0) * 100)}%</p>
+                      <h3>{cafe.name}</h3>
+                    </div>
+                    <Link to={`/cafes/${cafe.id}`} className="discover__recommendation-link">
+                      View cafe
+                    </Link>
+                  </div>
+                  <p className="discover__recommendation-meta">
+                    {cafe.distance_km.toFixed(1)} km away{cafe.rating ? ` · ★ ${cafe.rating}` : ""}
+                  </p>
+                  <p className="discover__recommendation-drink">
+                    Try <strong>{cafe.recommended_coffee?.name}</strong>
+                    {cafe.recommended_coffee?.price ? ` from $${cafe.recommended_coffee.price.toFixed(2)}` : ""}
+                  </p>
+                  {cafe.reasons?.length ? (
+                    <ul className="discover__reason-list">
+                      {cafe.reasons.map((reason) => (
+                        <li key={`${cafe.id}-${reason}`}>{reason}</li>
+                      ))}
+                    </ul>
+                  ) : null}
+                </article>
+              ))}
+            </div>
+          ) : (
+            <div className="discover__recommendation-empty">
+              No menu-level matches were found in our catalog here yet, but you can still browse nearby shops below.
+            </div>
+          )}
+          {nearbyPlaces.length > 0 && (
+            <div className="discover__live-places">
+              <div className="discover__live-places-head">
+                <h3>Live nearby coffee shops</h3>
+                <p>Useful when you want more options beyond the in-app catalog.</p>
+              </div>
+              <div className="discover__live-places-list">
+                {nearbyPlaces.map((place) => (
+                  <a
+                    key={place.id}
+                    className="discover__live-place"
+                    href={place.maps_url ?? place.website ?? "#"}
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    <div>
+                      <h4>{place.name}</h4>
+                      <p>{place.address}</p>
+                    </div>
+                    <p>
+                      {place.distance_km.toFixed(1)} km
+                      {place.rating ? ` · ★ ${place.rating}` : ""}
+                      {place.open_now === true ? " · Open now" : place.open_now === false ? " · Closed now" : ""}
+                    </p>
+                  </a>
+                ))}
+              </div>
+            </div>
+          )}
+        </section>
+      )}
+      {coords && !error && !loading && !hasVisiblePlaces ? (
         <div className="discover__empty">
           <div className="discover__empty-icon" aria-hidden="true">☕</div>
           <p>No cafes in this area yet</p>
-          <p className="discover__empty-hint">Try widening your search radius, a different location, or clear some filters.</p>
+          <p className="discover__empty-hint">Try widening your search radius, a different location, or add a Google Places key for live chain discovery.</p>
         </div>
       ) : null}
-      {coords && !error && !loading && cafes.length > 0 && (
+      {coords && !error && !loading && hasVisiblePlaces && (
         <div className={viewMode === "split" ? "discover__split-container" : ""}>
           {(viewMode === "map" || viewMode === "split") && (
             <div className={`discover__map ${viewMode === "split" ? "discover__map--split" : ""}`}>
-              <CafeMap cafes={cafes} center={[coords.lat, coords.lng]} />
+              <CafeMap cafes={mapCafes} center={[coords.lat, coords.lng]} />
             </div>
           )}
           {(viewMode === "list" || viewMode === "split") && (
             <div className={`discover__list ${viewMode === "split" ? "discover__list--split" : ""}`}>
               {cafes.map((cafe) => (
                 <CafeCard key={cafe.id} cafe={cafe} />
+              ))}
+              {nearbyPlaces.map((place) => (
+                <article key={`place-${place.id}`} className="discover__place-card">
+                  <div className="discover__place-card-top">
+                    <div>
+                      <p className="discover__place-badge">
+                        {place.brand ? `${place.brand} chain` : "Live place"}
+                      </p>
+                      <h3>{place.name}</h3>
+                    </div>
+                    <span className="discover__place-distance">
+                      {place.distance_km.toFixed(1)} km
+                    </span>
+                  </div>
+                  <p className="discover__place-meta">
+                    {place.address}
+                    {place.rating ? ` · ★ ${place.rating}` : ""}
+                    {place.open_now === true ? " · Open now" : place.open_now === false ? " · Closed now" : ""}
+                  </p>
+                  <div className="discover__place-actions">
+                    <a href={place.maps_url ?? place.website ?? "#"} target="_blank" rel="noreferrer">
+                      Open map
+                    </a>
+                    {place.directions_url && (
+                      <a href={place.directions_url} target="_blank" rel="noreferrer">
+                        Directions
+                      </a>
+                    )}
+                    {(place.order_url ?? place.website) && (
+                      <a href={place.order_url ?? place.website ?? "#"} target="_blank" rel="noreferrer">
+                        Order online
+                      </a>
+                    )}
+                  </div>
+                </article>
               ))}
             </div>
           )}

@@ -97,7 +97,11 @@ cd backend && pip install pytest pytest-asyncio && pytest tests/ -v
 ## Features (Market-Ready)
 
 - **Auth**: Register, login (JWT), order history for logged-in users
+- **Saved taste profile**: Logged-in users can save quiz preferences to their account
+- **Recommendation history**: Logged-in users can revisit past AI cafe matches
 - **Address search**: Search city or address to find cafes
+- **AI cafe matching**: Rank nearby cafes against roast, acidity, body, sweetness, flavor, milk, caffeine, and budget preferences
+- **Live nearby coffee shops**: Optional Google Places integration for real-world coffee shop discovery around the searched location
 - **Toast notifications**: Feedback for add-to-cart, order placed, errors
 - **Micro-interactions**: Button press, staggered card animations, success pulse
 - **404 page**: Proper not-found handling
@@ -116,6 +120,10 @@ cd backend && pip install pytest pytest-asyncio && pytest tests/ -v
 | POST | /api/v1/auth/register | - |
 | POST | /api/v1/auth/login | - |
 | GET | /api/v1/auth/me | Bearer |
+| GET | /api/v1/me/preferences | Bearer |
+| PUT | /api/v1/me/preferences | Bearer |
+| GET | /api/v1/me/recommendations | Bearer |
+| POST | /api/v1/recommendations/nearby | Optional Bearer |
 | POST | /api/v1/recommend | - |
 | GET | /admin/cafes | Basic |
 | GET | /admin/orders | Basic |
@@ -131,6 +139,13 @@ cd backend && pip install pytest pytest-asyncio && pytest tests/ -v
 | ADMIN_USER | admin |
 | ADMIN_PASSWORD | changeme |
 | CORS_ORIGINS | localhost origins |
+| GOOGLE_PLACES_API_KEY | optional |
+| GOOGLE_PLACES_REGION_CODE | US |
+
+## Notes
+
+- For backend local development, use **Python 3.13**. The current dependency stack is not ready for Python 3.14.
+- If `GOOGLE_PLACES_API_KEY` is unset, the app still works with the seeded cafe catalog and OSM geocoding, but live nearby coffee shop discovery is disabled.
 
 ## Architecture
 

@@ -1,24 +1,39 @@
 import { createContext, useContext, useState, useCallback, useEffect, ReactNode } from "react";
+import { useAuth } from "./AuthContext";
 
 const PREF_KEY = "coffee_finder_preferences";
+const API_BASE = import.meta.env.VITE_API_URL ?? (import.meta.env.DEV ? "" : "http://localhost:8000");
 
 export interface UserPreferences {
-  roast: number; // 1-5
+  roast_preference: number; // 1-5
+  acidity_preference: number;
+  body_preference: number;
+  sweetness_preference: number;
   brew_method: string;
   flavor_tags: string[];
   origin: string | null;
+  caffeine: string;
+  price_max: number | null;
+  milk: boolean;
 }
 
 const DEFAULT: UserPreferences = {
-  roast: 3,
+  roast_preference: 3,
+  acidity_preference: 3,
+  body_preference: 3,
+  sweetness_preference: 3,
   brew_method: "pour_over",
   flavor_tags: [],
   origin: null,
+  caffeine: "full",
+  price_max: null,
+  milk: false,
 };
 
 interface PreferenceContextValue {
   preferences: UserPreferences;
   setPreferences: (p: Partial<UserPreferences>) => void;
+  savePreferences: (p?: Partial<UserPreferences>) => Promise<UserPreferences>;
   hasCompletedQuiz: boolean;
   completeQuiz: () => void;
 }
@@ -26,6 +41,7 @@ interface PreferenceContextValue {
 const PreferenceContext = createContext<PreferenceContextValue | null>(null);
 
 export function PreferenceProvider({ children }: { children: ReactNode }) {
+  const { user, getAuthHeader } = useAuth();
   const [preferences, setPrefsState] = useState<UserPreferences>(() => {
     try {
       const s = localStorage.getItem(PREF_KEY);
@@ -53,6 +69,30 @@ export function PreferenceProvider({ children }: { children: ReactNode }) {
     setPrefsState((prev) => ({ ...prev, ...p }));
   }, []);
 
+  const savePreferences = useCallback(
+    async (p?: Partial<UserPreferences>) => {
+      const next = { ...preferences, ...(p ?? {}) };
+      setPrefsState(next);
+      if (user) {
+        const headers = getAuthHeader();
+        const res = await fetch(`${API_BASE}/api/v1/me/preferences`, {
+          method: "PUT",
+          headers: {
+            "Content-Type": "application/json",
+            ...(headers ?? {}),
+          },
+          body: JSON.stringify({ preferences: next }),
+        });
+        if (!res.ok) {
+          const data = await res.json().catch(() => ({}));
+          throw new Error(data.detail || "Couldn't save your taste profile");
+        }
+      }
+      return next;
+    },
+    [preferences, user, getAuthHeader]
+  );
+
   const completeQuiz = useCallback(() => {
     setHasCompletedQuiz(true);
     try {
@@ -60,9 +100,24 @@ export function PreferenceProvider({ children }: { children: ReactNode }) {
     } catch {}
   }, []);
 
+  useEffect(() => {
+    if (!user) return;
+    const headers = getAuthHeader();
+    if (!headers) return;
+    fetch(`${API_BASE}/api/v1/me/preferences`, { headers })
+      .then((r) => (r.ok ? r.json() : null))
+      .then((data) => {
+        if (data?.preferences) {
+          setPrefsState((prev) => ({ ...prev, ...data.preferences }));
+          setHasCompletedQuiz(true);
+        }
+      })
+      .catch(() => {});
+  }, [user, getAuthHeader]);
+
   return (
     <PreferenceContext.Provider
-      value={{ preferences, setPreferences, hasCompletedQuiz, completeQuiz }}
+      value={{ preferences, setPreferences, savePreferences, hasCompletedQuiz, completeQuiz }}
     >
       {children}
     </PreferenceContext.Provider>

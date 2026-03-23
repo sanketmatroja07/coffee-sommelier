@@ -203,7 +203,7 @@ class ScoringEngine:
             ("flavor", flavor_sim),
         ]
         top.sort(key=lambda t: t[1], reverse=True)
-        top_features = [f"{n}={t[1]:.2f}" for n, t in top[:3]]
+        top_features = [f"{name}={score:.2f}" for name, score in top[:3]]
 
         return norm, top_features
 
