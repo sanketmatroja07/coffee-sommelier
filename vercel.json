@@ -1,8 +1,11 @@
 {
+  "$schema": "https://openapi.vercel.sh/vercel.json",
   "buildCommand": "cd consumer && npm run build",
   "outputDirectory": "consumer/dist",
   "installCommand": "cd consumer && npm install",
   "rewrites": [
-    { "source": "/(.*)", "destination": "/index.html" }
+    { "source": "/api/:path*", "destination": "/api/index?route=/api/:path*" },
+    { "source": "/", "destination": "/index.html" },
+    { "source": "/:path((?!api(?:/|$)).*)", "destination": "/index.html" }
   ]
 }

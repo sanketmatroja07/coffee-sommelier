@@ -1,8 +1,8 @@
 import { createContext, useContext, useState, useCallback, useEffect, ReactNode } from "react";
 import { useAuth } from "./AuthContext";
+import { API_BASE } from "../lib/apiBase";
 
 const PREF_KEY = "coffee_finder_preferences";
-const API_BASE = import.meta.env.VITE_API_URL ?? (import.meta.env.DEV ? "" : "http://localhost:8000");
 
 export interface UserPreferences {
   roast_preference: number; // 1-5

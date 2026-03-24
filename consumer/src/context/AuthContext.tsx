@@ -1,6 +1,6 @@
 import { createContext, useContext, useState, useCallback, useEffect, ReactNode } from "react";
+import { API_BASE } from "../lib/apiBase";
 
-const API_BASE = import.meta.env.VITE_API_URL ?? (import.meta.env.DEV ? "" : "http://localhost:8000");
 const TOKEN_KEY = "coffee_finder_token";
 
 interface User {

@@ -23,8 +23,7 @@ import { NotFound } from "./pages/NotFound";
 import { Recommendations } from "./pages/Recommendations";
 import { ErrorBoundary } from "./components/ErrorBoundary";
 import { OfflineBanner } from "./components/OfflineBanner";
-
-const API_BASE = import.meta.env.VITE_API_URL ?? (import.meta.env.DEV ? "" : "http://localhost:8000");
+import { API_BASE } from "./lib/apiBase";
 
 function AppContent() {
   const location = useLocation();
