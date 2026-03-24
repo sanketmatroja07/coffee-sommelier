@@ -35,6 +35,15 @@ class TokenOut(BaseModel):
     user: dict
 
 
+def normalize_email(email: str) -> str:
+    return email.strip().lower()
+
+
+def validate_password_strength(password: str) -> None:
+    if len(password) < 8:
+        raise HTTPException(status_code=400, detail="Password must be at least 8 characters")
+
+
 def create_token(user_id: str) -> str:
     expire = datetime.utcnow() + timedelta(minutes=settings.jwt_expire_minutes)
     payload = {"sub": user_id, "exp": expire}
@@ -64,13 +73,15 @@ async def get_current_user(
 
 @router.post("/auth/register", response_model=TokenOut)
 async def register(body: RegisterInput, db: AsyncSession = Depends(get_db)):
-    existing = (await db.execute(select(User).where(User.email == body.email))).scalar_one_or_none()
+    email = normalize_email(body.email)
+    validate_password_strength(body.password)
+    existing = (await db.execute(select(User).where(User.email == email))).scalar_one_or_none()
     if existing:
         raise HTTPException(status_code=400, detail="Email already registered")
     user = User(
-        email=body.email,
+        email=email,
         password_hash=pwd_context.hash(body.password),
-        name=body.name,
+        name=body.name.strip() if body.name else None,
         is_partner=body.is_partner,
     )
     db.add(user)
@@ -84,7 +95,8 @@ async def register(body: RegisterInput, db: AsyncSession = Depends(get_db)):
 
 @router.post("/auth/login", response_model=TokenOut)
 async def login(body: LoginInput, db: AsyncSession = Depends(get_db)):
-    user = (await db.execute(select(User).where(User.email == body.email))).scalar_one_or_none()
+    email = normalize_email(body.email)
+    user = (await db.execute(select(User).where(User.email == email))).scalar_one_or_none()
     if not user or not pwd_context.verify(body.password, user.password_hash):
         raise HTTPException(status_code=401, detail="Invalid email or password")
     token = create_token(str(user.id))

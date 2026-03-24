@@ -13,6 +13,7 @@ export function AuthModal({ onClose, defaultTab = "login", isPartnerSignup = fal
   const [tab, setTab] = useState<"login" | "register">(defaultTab);
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
+  const [confirmPassword, setConfirmPassword] = useState("");
   const [name, setName] = useState("");
   const [loading, setLoading] = useState(false);
   const { login, register } = useAuth();
@@ -24,8 +25,12 @@ export function AuthModal({ onClose, defaultTab = "login", isPartnerSignup = fal
       toast.error("Please enter your email");
       return;
     }
-    if (password.length < 6) {
-      toast.error("Password must be at least 6 characters");
+    if (password.length < 8) {
+      toast.error("Password must be at least 8 characters");
+      return;
+    }
+    if (tab === "register" && password !== confirmPassword) {
+      toast.error("Passwords do not match");
       return;
     }
     setLoading(true);
@@ -71,6 +76,7 @@ export function AuthModal({ onClose, defaultTab = "login", isPartnerSignup = fal
             onChange={(e) => setEmail(e.target.value)}
             required
             className="auth-modal__input"
+            autoComplete="email"
           />
           <input
             type="password"
@@ -78,9 +84,22 @@ export function AuthModal({ onClose, defaultTab = "login", isPartnerSignup = fal
             value={password}
             onChange={(e) => setPassword(e.target.value)}
             required
-            minLength={6}
+            minLength={8}
             className="auth-modal__input"
+            autoComplete={tab === "login" ? "current-password" : "new-password"}
           />
+          {tab === "register" && (
+            <input
+              type="password"
+              placeholder="Confirm password"
+              value={confirmPassword}
+              onChange={(e) => setConfirmPassword(e.target.value)}
+              required
+              minLength={8}
+              className="auth-modal__input"
+              autoComplete="new-password"
+            />
+          )}
           <button type="submit" className="auth-modal__submit" disabled={loading}>
             {loading ? "..." : tab === "login" ? "Log in" : "Sign up"}
           </button>

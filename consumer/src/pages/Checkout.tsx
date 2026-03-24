@@ -3,6 +3,7 @@ import { Link, useNavigate } from "react-router-dom";
 import { useCart } from "../context/CartContext";
 import { useAuth } from "../context/AuthContext";
 import { useToast } from "../context/ToastContext";
+import { saveGuestOrder } from "../lib/guestOrders";
 import { track } from "../lib/analytics";
 import "./Checkout.css";
 
@@ -62,6 +63,16 @@ export function Checkout({ apiBase }: CheckoutProps) {
       const data = await res.json();
       if (!res.ok) throw new Error(data.detail || "Order failed");
       const oid = data.order_id || "DEMO-" + Date.now();
+      if (!getAuthHeader()) {
+        saveGuestOrder({
+          id: oid,
+          cafe_name: cafeName,
+          total: data.total ?? total,
+          status: data.status ?? "pending",
+          created_at: new Date().toISOString(),
+          pickup_at: pickupSlot.iso,
+        });
+      }
       clearCart();
       toast.success("Order placed! We'll notify you when it's ready.");
       track("order_placed", { order_id: oid });

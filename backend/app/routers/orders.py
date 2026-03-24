@@ -1,12 +1,12 @@
 """Orders API - create and list orders."""
 from datetime import datetime, timezone
 from fastapi import APIRouter, Depends, HTTPException
-from pydantic import BaseModel
+from pydantic import BaseModel, Field
 from sqlalchemy import select
 from sqlalchemy.ext.asyncio import AsyncSession
 
 from app.database import get_db
-from app.models import Order, OrderItem, Cafe, CafeCoffee, Coffee
+from app.models import Order, OrderItem, Cafe, CafeCoffee, Coffee, CafeAddOn
 from app.routers.auth import get_current_user
 from app.models import User
 
@@ -21,7 +21,7 @@ class OrderItemAddOnInput(BaseModel):
 
 class OrderItemInput(BaseModel):
     cafe_coffee_id: str
-    quantity: int
+    quantity: int = Field(ge=1)
     size: str | None
     addons: list[OrderItemAddOnInput] = []
     special_instructions: str | None = None
@@ -31,8 +31,8 @@ class OrderItemInput(BaseModel):
 class CreateOrderInput(BaseModel):
     cafe_id: str
     pickup_at: str | None = None
-    items: list[OrderItemInput]
-    total: float
+    items: list[OrderItemInput] = Field(min_length=1)
+    total: float | None = None
 
 
 @router.post("/orders")
@@ -56,33 +56,88 @@ async def create_order(
                 pickup_dt = parsed
         except (ValueError, TypeError):
             pass
+    computed_total = 0.0
+    prepared_items: list[dict] = []
+
+    for it in body.items:
+        cc = (
+            await db.execute(
+                select(CafeCoffee).where(
+                    CafeCoffee.id == it.cafe_coffee_id,
+                    CafeCoffee.cafe_id == body.cafe_id,
+                    CafeCoffee.available == True,
+                )
+            )
+        ).scalar_one_or_none()
+        if not cc:
+            raise HTTPException(status_code=400, detail="One or more menu items are unavailable")
+
+        if it.size and cc.size_options and it.size not in (cc.size_options or []):
+            raise HTTPException(status_code=400, detail=f"{it.size} is not available for one of the items")
+
+        add_on_total = 0.0
+        addons_json = []
+        for addon in it.addons:
+            cafe_addon = (
+                await db.execute(
+                    select(CafeAddOn).where(
+                        CafeAddOn.id == addon.addon_id,
+                        CafeAddOn.cafe_id == body.cafe_id,
+                        CafeAddOn.available == True,
+                    )
+                )
+            ).scalar_one_or_none()
+            if not cafe_addon:
+                raise HTTPException(status_code=400, detail="One or more add-ons are unavailable")
+
+            addons_json.append(
+                {"addon_id": addon.addon_id, "name": cafe_addon.name, "price": cafe_addon.price}
+            )
+            add_on_total += cafe_addon.price
+
+        unit_price = round(cc.price + add_on_total, 2)
+        computed_total += round(unit_price * it.quantity, 2)
+        prepared_items.append(
+            {
+                "cafe_coffee_id": it.cafe_coffee_id,
+                "quantity": it.quantity,
+                "size": it.size,
+                "addons": addons_json,
+                "special_instructions": (
+                    it.special_instructions.strip()[:300] if it.special_instructions else None
+                ),
+                "price_at_order": unit_price,
+            }
+        )
+
+    computed_total = round(computed_total, 2)
+    if body.total is not None and abs(body.total - computed_total) > 0.01:
+        raise HTTPException(status_code=400, detail="Cart total changed. Please review your order and try again.")
+
     order = Order(
         user_id=str(user.id) if user else None,
         cafe_id=body.cafe_id,
         status="pending",
         pickup_at=pickup_dt,
-        total=body.total,
+        total=computed_total,
     )
     db.add(order)
     await db.flush()
 
-    for it in body.items:
-        cc = (await db.execute(select(CafeCoffee).where(CafeCoffee.id == it.cafe_coffee_id))).scalar_one_or_none()
-        if cc:
-            addons_json = [{"addon_id": a.addon_id, "name": a.name, "price": a.price} for a in it.addons]
-            oi = OrderItem(
-                order_id=order.id,
-                cafe_coffee_id=it.cafe_coffee_id,
-                quantity=it.quantity,
-                size=it.size,
-                addons=addons_json,
-                special_instructions=it.special_instructions,
-                price_at_order=it.price_at_order,
-            )
-            db.add(oi)
+    for it in prepared_items:
+        oi = OrderItem(
+            order_id=order.id,
+            cafe_coffee_id=it["cafe_coffee_id"],
+            quantity=it["quantity"],
+            size=it["size"],
+            addons=it["addons"],
+            special_instructions=it["special_instructions"],
+            price_at_order=it["price_at_order"],
+        )
+        db.add(oi)
 
     await db.flush()
-    return {"order_id": str(order.id), "status": "pending"}
+    return {"order_id": str(order.id), "status": "pending", "total": computed_total}
 
 
 @router.get("/orders")

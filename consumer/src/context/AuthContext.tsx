@@ -46,10 +46,11 @@ export function AuthProvider({ children }: { children: ReactNode }) {
   }, [token, fetchMe]);
 
   const login = useCallback(async (email: string, password: string) => {
+    const normalizedEmail = email.trim().toLowerCase();
     const res = await fetch(`${API_BASE}/api/v1/auth/login`, {
       method: "POST",
       headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({ email, password }),
+      body: JSON.stringify({ email: normalizedEmail, password }),
     });
     const data = await res.json();
     if (!res.ok) throw new Error(data.detail || "Login failed");
@@ -59,10 +60,16 @@ export function AuthProvider({ children }: { children: ReactNode }) {
   }, []);
 
   const register = useCallback(async (email: string, password: string, name?: string, isPartner?: boolean) => {
+    const normalizedEmail = email.trim().toLowerCase();
     const res = await fetch(`${API_BASE}/api/v1/auth/register`, {
       method: "POST",
       headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({ email, password, name, is_partner: isPartner }),
+      body: JSON.stringify({
+        email: normalizedEmail,
+        password,
+        name: name?.trim() || undefined,
+        is_partner: isPartner,
+      }),
     });
     const data = await res.json();
     if (!res.ok) throw new Error(data.detail || "Registration failed");

@@ -31,7 +31,7 @@ export function AddToCartModal({
   menuItem,
   addons = [],
 }: AddToCartModalProps) {
-  const { addItem } = useCart();
+  const { addItem, items } = useCart();
   const toast = useToast();
   const [size, setSize] = useState(menuItem.size_options?.[0] || "12oz");
   const [selectedAddons, setSelectedAddons] = useState<{ addon_id: string; name: string; price: number }[]>([]);
@@ -50,6 +50,10 @@ export function AddToCartModal({
   const itemTotal = (menuItem.price + addonsTotal) * quantity;
 
   const handleAdd = () => {
+    if (items.length > 0 && items[0].cafe_id !== cafeId) {
+      toast.error("Your cart already has items from another cafe. Finish that order or clear the cart first.");
+      return;
+    }
     addItem({
       cafe_coffee_id: menuItem.id,
       cafe_id: cafeId,

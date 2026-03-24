@@ -2,6 +2,7 @@ import { useEffect, useState, useCallback } from "react";
 import { Link } from "react-router-dom";
 import { useAuth } from "../context/AuthContext";
 import { AuthModal } from "../components/AuthModal";
+import { getGuestOrders, type GuestOrderSummary } from "../lib/guestOrders";
 import "./Orders.css";
 
 interface Order {
@@ -23,6 +24,13 @@ export function Orders({ apiBase }: OrdersProps) {
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
   const [showAuth, setShowAuth] = useState(false);
+  const [guestOrders, setGuestOrders] = useState<GuestOrderSummary[]>([]);
+
+  useEffect(() => {
+    if (!user) {
+      setGuestOrders(getGuestOrders());
+    }
+  }, [user]);
 
   const fetchOrders = useCallback(() => {
     if (!user) return;
@@ -51,7 +59,29 @@ export function Orders({ apiBase }: OrdersProps) {
     return (
       <div className="orders orders--guest">
         <h1>Your orders</h1>
-        <p>Log in to see your order history.</p>
+        {guestOrders.length > 0 ? (
+          <>
+            <p>Your recent guest orders are saved on this device.</p>
+            <ul className="orders__list">
+              {guestOrders.map((o) => (
+                <li key={o.id} className="orders__item">
+                  <Link to={`/orders/${o.id}`} className="orders__item-link">
+                    <div className="orders__item-header">
+                      <span className="orders__cafe">{o.cafe_name}</span>
+                      <span className={`orders__status orders__status--${o.status}`}>{o.status}</span>
+                    </div>
+                    <div className="orders__item-meta">
+                      ${o.total.toFixed(2)} · {new Date(o.created_at).toLocaleDateString()}
+                    </div>
+                  </Link>
+                </li>
+              ))}
+            </ul>
+            <p>Log in to sync future orders across devices.</p>
+          </>
+        ) : (
+          <p>Log in to see your full order history.</p>
+        )}
         <button onClick={() => setShowAuth(true)} className="orders__login-btn">Log in</button>
         {showAuth && <AuthModal onClose={() => setShowAuth(false)} defaultTab="login" />}
       </div>

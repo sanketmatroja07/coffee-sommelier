@@ -18,6 +18,13 @@ const userIcon = L.divIcon({
   iconAnchor: [10, 10],
 });
 
+const selectedCafeIcon = L.divIcon({
+  className: "cafe-map__selected-marker",
+  html: '<div class="cafe-map__selected-dot"></div>',
+  iconSize: [26, 26],
+  iconAnchor: [13, 13],
+});
+
 interface Cafe {
   id: string;
   name: string;
@@ -37,6 +44,8 @@ interface CafeMapProps {
   cafes: Cafe[];
   center: [number, number];
   showUserMarker?: boolean;
+  selectedCafeId?: string | null;
+  onSelectCafe?: (cafeId: string) => void;
 }
 
 function RecenterControl({ center }: { center: [number, number] }) {
@@ -65,7 +74,16 @@ function RecenterButton({ center }: { center: [number, number] }) {
   );
 }
 
-export function CafeMap({ cafes, center, showUserMarker = true }: CafeMapProps) {
+export function CafeMap({
+  cafes,
+  center,
+  showUserMarker = true,
+  selectedCafeId,
+  onSelectCafe,
+}: CafeMapProps) {
+  const selectedCafe = cafes.find((cafe) => cafe.id === selectedCafeId);
+  const focusTarget: [number, number] = selectedCafe ? [selectedCafe.lat, selectedCafe.lng] : center;
+
   return (
     <div className="cafe-map__wrapper">
       <MapContainer
@@ -78,10 +96,17 @@ export function CafeMap({ cafes, center, showUserMarker = true }: CafeMapProps) 
           attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>'
           url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
         />
-        <RecenterControl center={center} />
+        <RecenterControl center={focusTarget} />
         {showUserMarker && <Marker position={center} icon={userIcon} zIndexOffset={1000} />}
         {cafes.map((cafe) => (
-          <Marker key={cafe.id} position={[cafe.lat, cafe.lng]}>
+          <Marker
+            key={cafe.id}
+            position={[cafe.lat, cafe.lng]}
+            icon={cafe.id === selectedCafeId ? selectedCafeIcon : undefined}
+            eventHandlers={{
+              click: () => onSelectCafe?.(cafe.id),
+            }}
+          >
             <Popup>
               {cafe.is_chain && cafe.brand ? (
                 <>

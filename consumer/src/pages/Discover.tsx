@@ -88,6 +88,7 @@ export function Discover({ apiBase }: DiscoverProps) {
   const [recommendedCafes, setRecommendedCafes] = useState<Cafe[]>([]);
   const [nearbyPlaces, setNearbyPlaces] = useState<NearbyPlace[]>([]);
   const [mapsProvider, setMapsProvider] = useState("local_catalog");
+  const [selectedCafeId, setSelectedCafeId] = useState<string | null>(null);
   const toast = useToast();
   const { preferences, hasCompletedQuiz } = usePreferences();
   const { getAuthHeader } = useAuth();
@@ -369,6 +370,16 @@ export function Discover({ apiBase }: DiscoverProps) {
   ];
   const hasVisiblePlaces = cafes.length > 0 || nearbyPlaces.length > 0;
 
+  useEffect(() => {
+    if (!mapCafes.length) {
+      setSelectedCafeId(null);
+      return;
+    }
+    setSelectedCafeId((current) =>
+      current && mapCafes.some((cafe) => cafe.id === current) ? current : mapCafes[0].id
+    );
+  }, [cafes, nearbyPlaces]);
+
   return (
     <div className="discover">
       <header className="discover__header">
@@ -613,16 +624,36 @@ export function Discover({ apiBase }: DiscoverProps) {
         <div className={viewMode === "split" ? "discover__split-container" : ""}>
           {(viewMode === "map" || viewMode === "split") && (
             <div className={`discover__map ${viewMode === "split" ? "discover__map--split" : ""}`}>
-              <CafeMap cafes={mapCafes} center={[coords.lat, coords.lng]} />
+              <CafeMap
+                cafes={mapCafes}
+                center={[coords.lat, coords.lng]}
+                selectedCafeId={selectedCafeId}
+                onSelectCafe={setSelectedCafeId}
+              />
             </div>
           )}
           {(viewMode === "list" || viewMode === "split") && (
             <div className={`discover__list ${viewMode === "split" ? "discover__list--split" : ""}`}>
               {cafes.map((cafe) => (
-                <CafeCard key={cafe.id} cafe={cafe} />
+                <div
+                  key={cafe.id}
+                  className={`discover__catalog-card ${selectedCafeId === cafe.id ? "is-selected" : ""}`}
+                >
+                  <CafeCard cafe={cafe} />
+                  <div className="discover__catalog-actions">
+                    <button type="button" onClick={() => setSelectedCafeId(cafe.id)}>
+                      Show on map
+                    </button>
+                    <Link to={`/cafes/${cafe.id}`}>View cafe</Link>
+                  </div>
+                </div>
               ))}
               {nearbyPlaces.map((place) => (
-                <article key={`place-${place.id}`} className="discover__place-card">
+                <article
+                  key={`place-${place.id}`}
+                  className={`discover__place-card ${selectedCafeId === place.id ? "is-selected" : ""}`}
+                  onClick={() => setSelectedCafeId(place.id)}
+                >
                   <div className="discover__place-card-top">
                     <div>
                       <p className="discover__place-badge">

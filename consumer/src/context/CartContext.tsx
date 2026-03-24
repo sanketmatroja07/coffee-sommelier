@@ -1,4 +1,4 @@
-import { createContext, useContext, useState, useCallback, ReactNode } from "react";
+import { createContext, useContext, useState, useCallback, ReactNode, useEffect } from "react";
 
 export interface CartItemAddon {
   addon_id: string;
@@ -29,9 +29,23 @@ interface CartContextValue {
 }
 
 const CartContext = createContext<CartContextValue | null>(null);
+const CART_KEY = "coffee_finder_cart";
 
 export function CartProvider({ children }: { children: ReactNode }) {
-  const [items, setItems] = useState<CartItem[]>([]);
+  const [items, setItems] = useState<CartItem[]>(() => {
+    try {
+      const saved = localStorage.getItem(CART_KEY);
+      return saved ? JSON.parse(saved) : [];
+    } catch {
+      return [];
+    }
+  });
+
+  useEffect(() => {
+    try {
+      localStorage.setItem(CART_KEY, JSON.stringify(items));
+    } catch {}
+  }, [items]);
 
   const addItem = useCallback((item: Omit<CartItem, "quantity"> & { quantity?: number }) => {
     setItems((prev) => {
@@ -99,10 +113,7 @@ export function CartProvider({ children }: { children: ReactNode }) {
 
   const clearCart = useCallback(() => setItems([]), []);
 
-  const total = items.reduce((sum, i) => {
-    const addonsTotal = (i.addons || []).reduce((a, ad) => a + ad.price, 0);
-    return sum + (i.price + addonsTotal) * i.quantity;
-  }, 0);
+  const total = items.reduce((sum, i) => sum + i.price * i.quantity, 0);
   const itemCount = items.reduce((sum, i) => sum + i.quantity, 0);
 
   return (
