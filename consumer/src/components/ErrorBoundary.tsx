@@ -1,4 +1,5 @@
 import { Component, ErrorInfo, ReactNode } from "react";
+import { clearAppStorage } from "../lib/storage";
 
 interface Props {
   children: ReactNode;
@@ -25,7 +26,17 @@ export class ErrorBoundary extends Component<Props, State> {
         <div className="error-boundary">
           <h1>Something went wrong</h1>
           <p>Please refresh the page or try again later.</p>
-          <button onClick={() => window.location.reload()}>Refresh</button>
+          <div style={{ display: "flex", gap: "0.75rem", justifyContent: "center" }}>
+            <button onClick={() => window.location.reload()}>Refresh</button>
+            <button
+              onClick={() => {
+                clearAppStorage();
+                window.location.reload();
+              }}
+            >
+              Reset app data
+            </button>
+          </div>
         </div>
       );
     }

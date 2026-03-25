@@ -12,7 +12,17 @@ const GUEST_ORDERS_KEY = "coffee_finder_guest_orders";
 export function getGuestOrders(): GuestOrderSummary[] {
   try {
     const raw = localStorage.getItem(GUEST_ORDERS_KEY);
-    return raw ? JSON.parse(raw) : [];
+    if (!raw) return [];
+    const parsed = JSON.parse(raw);
+    if (!Array.isArray(parsed)) return [];
+    return parsed.filter(
+      (item): item is GuestOrderSummary =>
+        typeof item?.id === "string" &&
+        typeof item?.cafe_name === "string" &&
+        typeof item?.total === "number" &&
+        typeof item?.status === "string" &&
+        typeof item?.created_at === "string"
+    );
   } catch {
     return [];
   }

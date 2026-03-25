@@ -47,7 +47,13 @@ export function PreferenceProvider({ children }: { children: ReactNode }) {
       const s = localStorage.getItem(PREF_KEY);
       if (s) {
         const parsed = JSON.parse(s);
-        return { ...DEFAULT, ...parsed };
+        if (parsed && typeof parsed === "object" && !Array.isArray(parsed)) {
+          return {
+            ...DEFAULT,
+            ...parsed,
+            flavor_tags: Array.isArray(parsed.flavor_tags) ? parsed.flavor_tags : DEFAULT.flavor_tags,
+          };
+        }
       }
     } catch {}
     return DEFAULT;

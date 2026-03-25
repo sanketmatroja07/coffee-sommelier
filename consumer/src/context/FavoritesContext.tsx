@@ -23,7 +23,10 @@ export function FavoritesProvider({ children }: { children: ReactNode }) {
   const [favoriteCafes, setFavorites] = useState<FavoriteCafe[]>(() => {
     try {
       const s = localStorage.getItem(FAV_KEY);
-      if (s) return JSON.parse(s);
+      if (s) {
+        const parsed = JSON.parse(s);
+        return Array.isArray(parsed) ? parsed.filter((item) => typeof item?.id === "string") : [];
+      }
     } catch {}
     return [];
   });
